@@ -20,7 +20,7 @@
                 
                 <p>
            		<strong>Layouts para pantallas de escritorio (1240px +)</strong>
-				<br/>s
+				<br/>
 				<strong>Descripción:</strong><br/>
 				La estructura de la vista para tamaño escritorio se genera a partir de la resolución de 1240px.<br/>
             	siendo esta la resolución más grande.<br/>
@@ -74,6 +74,14 @@ El layout está compuesto de dos columnas ocupando 3 módulos el menú lateral i
 
             <article id="navPortal" class="row fullWidth margin-tb">
                 <h3>Menu Navegación de portal</h3>
+                <p>
+<strong>Retícula para pantallas de escritorio (1240px +)</strong>
+<strong>Descripción:</strong><br />
+La retícula para escritorio en su tamaño máximo se componen de 12 módulos los cuales se manejan vía CSS agregando clases con información de tamaños variables a los contenedores.
+<br />
+El layout está compuesto de dos columnas ocupando 3 módulos el menú lateral izquierdo y 9 módulos el espacio central.
+                <p><br /><br />
+                    <div class="row">
                     <nav id="menu-corporativo" class="navbar menu-ripley" role="navigation">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navTop2">
@@ -92,9 +100,41 @@ El layout está compuesto de dos columnas ocupando 3 módulos el menú lateral i
                         </ul>
                     </div>
                     </nav>
+                    </div>
+                    <div class="codeHtml">
+                    <pre class="brush: js;">
+                    <nav id="menu-corporativo" class="navbar menu-ripley" role="navigation">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navTop2">
+                                <img src="assets/img/arrow_menu.png"/>
+                            </button>
+                            <div class="navbar-brand">BANCO RIPLEY</div>
+                        </div>
+                        <div class="collapse navbar-collapse" id="navTop2">
+                            <ul class="nav">
+                                <li><a href="#" title="enlace a Tienda" rel="">Tienda</a></li>
+                                <li><a href="#" title="enlace a Tarjeta Ripley" rel="">Tarjeta Ripley</a></li>
+                                <li><a href="#" title="enlace a Ripley Puntos" rel="">Ripley Puntos</a></li>
+                                <li><a class="active" href="#" title="enlace a Banco Ripley" rel="">Banco Ripley</a></li>
+                                <li><a href="#" title="enlace a Seguros" rel="">Seguros</a></li>
+                                <li><a href="#" title="enlace a Ventas corporativas" rel="">Ventas Corporativas</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    </pre>
+                </div>
             </article>
             <article id="menuMacro" class="row fullWidth margin-tb">
-                <h3>Menu Macro</h3>
+             <h3> Grilla Responsive</h3>
+                            <p>
+            <strong>Retícula para pantallas de escritorio (1240px +)</strong>
+            <strong>Descripción:</strong><br />
+            La retícula para escritorio en su tamaño máximo se componen de 12 módulos los cuales se manejan vía CSS agregando clases con información de tamaños variables a los contenedores.
+            <br />
+            El layout está compuesto de dos columnas ocupando 3 módulos el menú lateral izquierdo y 9 módulos el espacio central.
+                            <p><br /><br />
+
+                <div class="row">
                     <nav class="menu-aux">
                         <ul>
                             <li><a href="#"><i class="x-small"></i>Emergencias</a></li>
@@ -114,12 +154,40 @@ El layout está compuesto de dos columnas ocupando 3 módulos el menú lateral i
                             <li><a rel="" title="Servicio al Cliente" href="#"><i class="icon-medium"></i>Servicio al Cliente</a></li>
                         </ul>
                     </nav>
-
+                </div>
+                    <div class="codeHtml">
+                    <pre class="brush: js;">
+                    <nav class="menu-aux">
+                        <ul>
+                            <li><a href="#"><i class="x-small"></i>Emergencias</a></li>
+                            <li><a href="#"><i class="x-small"></i>Sucursales</a></li>
+                            <li><a href="#"><i class="x-small"></i>Simule su Credito</a></li>
+                            <li><a href="#"><i class="x-small"></i>Solicitar Producto</a></li>
+                            <li><a href="#"><i class="x-small"></i>Servicio al Cliente</a></li>
+                        </ul>
+                    </nav>
+                    <nav id="menu-auxiliar" class="menu-aux mobile">
+                        <ul>
+                            <li><a rel="" title="Emergencias" href="#"><i class="icon-medium"></i>Emergencias</a></li>
+                            <li><a rel="" title="Sucursales" href="#"><i class="icon-medium"></i>Sucursales</a></li>
+                            <li><a rel="" title="Simule su credito" href="#"><i class="icon-medium"></i>Simule su Credito</a></li>
+                            <li><a rel="" title="Solicitar Producto" href="#"><i class="icon-medium"></i>Solicitar Producto</a></li>
+                            <li><a rel="" title="Servicio al Cliente" href="#"><i class="icon-medium"></i>Servicio al Cliente</a></li>
+                        </ul>
+                    </nav>
+                    </pre>
             </article>
 
             <article id="menuGral" class="row fullWidth margin-tb">
-
-                <h3>Menu General</h3>
+             <h3> Grilla Responsive</h3>
+                            <p>
+            <strong>Retícula para pantallas de escritorio (1240px +)</strong>
+            <strong>Descripción:</strong><br />
+            La retícula para escritorio en su tamaño máximo se componen de 12 módulos los cuales se manejan vía CSS agregando clases con información de tamaños variables a los contenedores.
+            <br />
+            El layout está compuesto de dos columnas ocupando 3 módulos el menú lateral izquierdo y 9 módulos el espacio central.
+                            <p><br /><br />
+                <div class="row">
                     <nav id="menu-productos" class="nav-general column5">
                         <ul class="ripleyCartolas"> 
                             <li><a rel="" title="Ultimos Movimientos" href="#"><i class="icon-medium"></i>Ultimos Movimientos</a></li>
@@ -150,13 +218,309 @@ El layout está compuesto de dos columnas ocupando 3 módulos el menú lateral i
                             </li>
                         </ul>
                     </nav>
-
-
+                </div>
+                 <div class="codeHtml">
+                    <pre class="brush: js;">
+                    <nav id="menu-productos" class="nav-general column5">
+                        <ul class="ripleyCartolas"> 
+                            <li><a rel="" title="Ultimos Movimientos" href="#"><i class="icon-medium"></i>Ultimos Movimientos</a></li>
+                            <li><a rel="" title="Saldos Consolidados" href="#"><i class="icon-medium ico-saldos"></i>Saldos Consolidados</a></li>
+                        </ul>
+                        <ul class="ripleyProductos">
+                            <li><a rel="" title="Cuentas" href="index.html"><i class="icon-medium ico-cuentas"></i>Cuentas</a>
+                               <!--  <ul class="submenu">
+                                    <li><a rel="" title="Pago de Cuentas" href="#">Cuenta Corriente</a></li>
+                                    <li><a rel="" title="Recarga de Celulares" href="#">Cuenta Vista</a></li>
+                                    <li><a rel="" title="Ripley Puntos" href="#">Cuenta de Ahorro</a></li>
+                                </ul> -->
+                            </li>
+                            <li><a rel="" title="Linea de Credito" href="sp1_01_29_01__lineadecredito_ult_movimientos.html"><i class="icon-medium ico-linea"></i>Linea de Crédito</a></li>
+                            <li><a rel="" title="Tarjetas de Credito" href="#"><i class="icon-medium ico-tarjeta"></i>Tarjetas de Crédito</a></li>
+                            <li><a rel="" title="Transferencias" href="#"><i class="icon-medium ico-trans"></i>Transferencias</a></li>
+                            <li><a rel="" title="Créditos" href="#"><i class="icon-medium ico-creditos"></i>Créditos</a></li>
+                            <li><a rel="" title="Seguros" href="#"><i class="icon-medium ico-seguros"></i>Seguros</a></li>      
+                            <li><a rel="" title="Inversiones" href="#"><i class="icon-medium ico-inversiones"></i>Inversiones</a></li>
+                        </ul>
+                        <ul class="ripleyServ"> 
+                            <li><a href=""><i class="icon-medium ico-serv"></i>Servicios</a>
+                                <ul class="submenu">
+                                    <li><a rel="" title="Pago de Cuentas" href="#">Pago de Cuentas</a></li>
+                                    <li><a rel="" title="Recarga de Celulares" href="#">Recarga de Celulares</a></li>
+                                    <li><a rel="" title="Ripley Puntos" href="#">Ripley Puntos</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    </pre>
+                </div>    
             </article>
+
+           <article id="submenu_contexto" class="row fullWidth margin-tb">
+             <h3> Grilla Responsive</h3>
+                            <p>
+            <strong>Retícula para pantallas de escritorio (1240px +)</strong>
+            <strong>Descripción:</strong><br />
+            La retícula para escritorio en su tamaño máximo se componen de 12 módulos los cuales se manejan vía CSS agregando clases con información de tamaños variables a los contenedores.
+            <br />
+            El layout está compuesto de dos columnas ocupando 3 módulos el menú lateral izquierdo y 9 módulos el espacio central.
+                            <p><br /><br />            
+            <div class="row">
+                <nav class="menu-contextual">
+                    <ul class="nav nav-tabs">
+                      <li class="active" ><a href="sp2_01_00_tarjeta_de_credito_estadodecuenta.html">Estado de Cuenta</a></li>
+                      <li><a href="sp2_01_00_tarjeta_de_credito_movimientos.html">Movimientos</a></li>
+                      <li><a href="sp2_01_00_tarjeta_de_credito_saldos.html">Saldos</a></li>
+                      <li><a href="sp2_01_00_tarjeta_de_credito_pagosycuentas.html">Pagos y Cuentas</a></li>
+                      <li><a href="sp2_01_00_tarjeta_de_credito_solicitatarjeta.html">Solicita Tarjeta</a></li>
+                      <li><a href="sp2_01_00_tarjeta_de_credito_tarjetaadicional.html">Tarjeta Adicional</a></li>
+                      <li><a href="sp2_01_00_tarjeta_de_credito_tarjetavirtual.html">Tarjeta Virtual</a></li>
+                    </ul> 
+                    <div class="selectMenu selectBox">
+                        <div class="box">Seleccion de Servicio o Seccion</div>
+                    </div>
+                </nav>
+                <div class="column12 last pad-all fullWidth contenedor">
+                    <ul class="submenu-contextual hide-on-phones">
+                        <li><a href="sp2_01_00_tarjeta_de_credito_estadodecuenta.html" title="Ultimos movimientos" rel="">E.C Nacional</a></li>
+                        <li><a href="sp2_01_00_tarjeta_de_credito_estadodecuenta_historico.html" title="Transferencias" rel="">E.C Historicos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="codeHtml">
+                <pre class="brush :js;">
+                <nav class="menu-contextual">
+                    <ul class="nav nav-tabs">
+                      <li class="active" ><a href="sp2_01_00_tarjeta_de_credito_estadodecuenta.html">Estado de Cuenta</a></li>
+                      <li><a href="sp2_01_00_tarjeta_de_credito_movimientos.html">Movimientos</a></li>
+                      <li><a href="sp2_01_00_tarjeta_de_credito_saldos.html">Saldos</a></li>
+                      <li><a href="sp2_01_00_tarjeta_de_credito_pagosycuentas.html">Pagos y Cuentas</a></li>
+                      <li><a href="sp2_01_00_tarjeta_de_credito_solicitatarjeta.html">Solicita Tarjeta</a></li>
+                      <li><a href="sp2_01_00_tarjeta_de_credito_tarjetaadicional.html">Tarjeta Adicional</a></li>
+                      <li><a href="sp2_01_00_tarjeta_de_credito_tarjetavirtual.html">Tarjeta Virtual</a></li>
+                    </ul> 
+                    <div class="selectMenu selectBox">
+                        <div class="box">Seleccion de Servicio o Seccion</div>
+                    </div>
+                </nav>
+                <div class="column12 last pad-all fullWidth contenedor">
+                    <ul class="submenu-contextual hide-on-phones">
+                        <li><a href="sp2_01_00_tarjeta_de_credito_estadodecuenta.html" title="Ultimos movimientos" rel="">E.C Nacional</a></li>
+                        <li><a href="sp2_01_00_tarjeta_de_credito_estadodecuenta_historico.html" title="Transferencias" rel="">E.C Historicos</a></li>
+                    </ul>
+                </pre>
+            </div>                    
+           </article>
             <article id="footer">
             </article>
-           
+            <article id="grilla" class="gridResponsive row fullWidth margin-tb">
+                <h3> Grilla Responsive</h3>
+                <p>
+<strong>Retícula para pantallas de escritorio (1240px +)</strong>
+<strong>Descripción:</strong><br />
+La retícula para escritorio en su tamaño máximo se componen de 12 módulos los cuales se manejan vía CSS agregando clases con información de tamaños variables a los contenedores.
+<br />
+El layout está compuesto de dos columnas ocupando 3 módulos el menú lateral izquierdo y 9 módulos el espacio central.
+                <p><br /><br />
+                <div class="row">
+            <header id="corporativo" class="main-head">
+                <div class="row">
+                    <a class="logo" href="index.html" title="ir a Banco Ripley" rel="index"><img alt="Logo Banco Ripley" src="assets/img/logo.png"/></a>
+                    <section class="column6 last info-cliente">
+                        <p class="color-p">Bienvenido Augusto Roberto Bastidas Collao</p>
+                        <p class="t-small">Último acceso 02/08/2013 a 12:50:06</p>
+                        <ul class="accesos-cuenta">
+                            <li><a href="#"><i class="x-small ico-puntos"></i>Ripley Puntos: 2.543</a></li>
+                            <li><a href="#"><i class="x-small ico-perfil"></i>Mi perfil</a></li>
+                            <li><a href="#"><i class="x-small ico-close"></i>Cerrar Sesion </a></li>
+                        </ul>
+                    </section>
+                </div>
+            </header>
+            </div>
 
+                 <div class="codeHtml">
+                    <pre class="brush: js;">
+                    <header id="corporativo" class="main-head">
+                        <div class="row">
+                            <a class="logo" href="index.html" title="ir a Banco Ripley" rel="index"><img alt="Logo Banco Ripley" src="assets/img/logo.png"/></a>
+                            <section class="column6 last info-cliente">
+                                <p class="color-p">Bienvenido Augusto Roberto Bastidas Collao</p>
+                                <p class="t-small">Último acceso 02/08/2013 a 12:50:06</p>
+                                <ul class="accesos-cuenta">
+                                    <li><a href="#"><i class="x-small ico-puntos"></i>Ripley Puntos: 2.543</a></li>
+                                    <li><a href="#"><i class="x-small ico-perfil"></i>Mi perfil</a></li>
+                                    <li><a href="#"><i class="x-small ico-close"></i>Cerrar Sesion </a></li>
+                                </ul>
+                            </section>
+                        </div>
+                    </header>
+                    </pre>
+                </div>
+            </article>
+            <article id="grilla" class="gridResponsive row fullWidth margin-tb">
+                <h3> Grilla Responsive</h3>
+                <p>
+<strong>Retícula para pantallas de escritorio (1240px +)</strong>
+<strong>Descripción:</strong><br />
+La retícula para escritorio en su tamaño máximo se componen de 12 módulos los cuales se manejan vía CSS agregando clases con información de tamaños variables a los contenedores.
+<br />
+El layout está compuesto de dos columnas ocupando 3 módulos el menú lateral izquierdo y 9 módulos el espacio central.
+                <p><br /><br />
+                <div class="row">
+                <div class="column1"></div>
+                <div class="column1"></div>
+                <div class="column1"></div>
+                <div class="column1"></div>
+                <div class="column1"></div>
+                <div class="column1"></div>
+                <div class="column1"></div>
+                <div class="column1"></div>
+                <div class="column1"></div>
+                <div class="column1"></div>
+                <div class="column1"></div>
+                <div class="column1 last"></div>
+            </div>
+
+                 <div class="codeHtml">
+                    <pre class="brush: js;">
+                    <div class="column1"></div>
+                    <div class="column1"></div>
+                    <div class="column1"></div>
+                    <div class="column1"></div>
+                    <div class="column1"></div>
+                    <div class="column1"></div>
+                    <div class="column1"></div>
+                    <div class="column1"></div>
+                    <div class="column1"></div>
+                    <div class="column1"></div>
+                    <div class="column1"></div>
+                    <div class="column1 last"></div>
+                    </pre>
+                </div>
+            </article>
+            <article id="grilla" class="gridResponsive row fullWidth margin-tb">
+                <h3> Grilla Responsive</h3>
+                <p>
+<strong>Retícula para pantallas de escritorio (1240px +)</strong>
+<strong>Descripción:</strong><br />
+La retícula para escritorio en su tamaño máximo se componen de 12 módulos los cuales se manejan vía CSS agregando clases con información de tamaños variables a los contenedores.
+<br />
+El layout está compuesto de dos columnas ocupando 3 módulos el menú lateral izquierdo y 9 módulos el espacio central.
+                <p><br /><br />
+                <div class="row">
+                <div class="column1"></div>
+                <div class="column1"></div>
+                <div class="column1"></div>
+                <div class="column1"></div>
+                <div class="column1"></div>
+                <div class="column1"></div>
+                <div class="column1"></div>
+                <div class="column1"></div>
+                <div class="column1"></div>
+                <div class="column1"></div>
+                <div class="column1"></div>
+                <div class="column1 last"></div>
+            </div>
+
+                 <div class="codeHtml">
+                    <pre class="brush: js;">
+                    <div class="column1"></div>
+                    <div class="column1"></div>
+                    <div class="column1"></div>
+                    <div class="column1"></div>
+                    <div class="column1"></div>
+                    <div class="column1"></div>
+                    <div class="column1"></div>
+                    <div class="column1"></div>
+                    <div class="column1"></div>
+                    <div class="column1"></div>
+                    <div class="column1"></div>
+                    <div class="column1 last"></div>
+                    </pre>
+                </div>
+            </article>
+            <article id="grilla" class="gridResponsive row fullWidth margin-tb">
+                <h3> Grilla Responsive</h3>
+                <p>
+<strong>Retícula para pantallas de escritorio (1240px +)</strong>
+<strong>Descripción:</strong><br />
+La retícula para escritorio en su tamaño máximo se componen de 12 módulos los cuales se manejan vía CSS agregando clases con información de tamaños variables a los contenedores.
+<br />
+El layout está compuesto de dos columnas ocupando 3 módulos el menú lateral izquierdo y 9 módulos el espacio central.
+                <p><br /><br />
+                <div class="row">
+                <div class="column1"></div>
+                <div class="column1"></div>
+                <div class="column1"></div>
+                <div class="column1"></div>
+                <div class="column1"></div>
+                <div class="column1"></div>
+                <div class="column1"></div>
+                <div class="column1"></div>
+                <div class="column1"></div>
+                <div class="column1"></div>
+                <div class="column1"></div>
+                <div class="column1 last"></div>
+            </div>
+
+                 <div class="codeHtml">
+                    <pre class="brush: js;">
+                    <div class="column1"></div>
+                    <div class="column1"></div>
+                    <div class="column1"></div>
+                    <div class="column1"></div>
+                    <div class="column1"></div>
+                    <div class="column1"></div>
+                    <div class="column1"></div>
+                    <div class="column1"></div>
+                    <div class="column1"></div>
+                    <div class="column1"></div>
+                    <div class="column1"></div>
+                    <div class="column1 last"></div>
+                    </pre>
+                </div>
+            </article>
+            <article id="grilla" class="gridResponsive row fullWidth margin-tb">
+                <h3> Grilla Responsive</h3>
+                <p>
+<strong>Retícula para pantallas de escritorio (1240px +)</strong>
+<strong>Descripción:</strong><br />
+La retícula para escritorio en su tamaño máximo se componen de 12 módulos los cuales se manejan vía CSS agregando clases con información de tamaños variables a los contenedores.
+<br />
+El layout está compuesto de dos columnas ocupando 3 módulos el menú lateral izquierdo y 9 módulos el espacio central.
+                <p><br /><br />
+                <div class="row">
+                <div class="column1"></div>
+                <div class="column1"></div>
+                <div class="column1"></div>
+                <div class="column1"></div>
+                <div class="column1"></div>
+                <div class="column1"></div>
+                <div class="column1"></div>
+                <div class="column1"></div>
+                <div class="column1"></div>
+                <div class="column1"></div>
+                <div class="column1"></div>
+                <div class="column1 last"></div>
+            </div>
+
+                 <div class="codeHtml">
+                    <pre class="brush: js;">
+                    <div class="column1"></div>
+                    <div class="column1"></div>
+                    <div class="column1"></div>
+                    <div class="column1"></div>
+                    <div class="column1"></div>
+                    <div class="column1"></div>
+                    <div class="column1"></div>
+                    <div class="column1"></div>
+                    <div class="column1"></div>
+                    <div class="column1"></div>
+                    <div class="column1"></div>
+                    <div class="column1 last"></div>
+                    </pre>
+                </div>
+            </article>                                                            
         </section>
     </div>
 </div>
