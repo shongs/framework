@@ -105,11 +105,51 @@
     </div>
     <div class="column9 last fullWidth">
 
-
         <section id="botones">
             <h2>Elementos de Interfaz</h2>
             <h3>Botones</h3>
-            <p></p>
+            
+            
+                <dl>
+                    <dt>1. Atributos:</dt>
+                    <dd>Los botones se generan con clases aditivas que van
+                        generando sus apariencia y función.
+                        Existen de tres tipos:
+                        <dl>
+                            <dt>Acción o transaccional:</dt>
+                            <dd>Que indica acciones que
+                                significan cambios significativos o transacciones.</dd>
+                            <dt>Enfatizado: </dt>
+                            <dd>Usados para el común de las acciones.</dd>
+                            <dt>
+                            Normal:</dt>
+                            <dd> De más bajo valor de interacción y que no
+                                signifique acciones importantes.</dd>
+
+                        </dl>
+                    </dd>
+                    
+                    <dt>2. Usabilidad</dt>
+                    <dd>
+                        Los botones se generan en un contexto de
+                        interacción del usuario y deben ir en la mayoría de
+                        los casos abajo de las tablas o formularios con los
+                        cuales ingresan datos.
+                    </dd>
+                    
+                    <dt>3. Reglas y restricciones:</dt>
+                    <dd>
+                        Los botones se generan en un contexto de
+                        interacción del usuario y deben ir en la mayoría de
+                        los casos abajo de las tablas o formularios con los
+                        cuales ingresan datos.
+                    </dd>
+                   
+
+
+                    
+                </dl>
+            
 
             <button class="btn btn-trans">Boton Transaccional</button>
             <button class="btn btn-en">Boton Enfatizado</button>
@@ -122,75 +162,137 @@
                     <button class="btn btn-se">Boton Normal</button>
                 </pre>
             </div>
-        </section>
-
+                
+        </section>    
         <section id="tabs">
             <h3>Tabs</h3>
 
-            <nav class="menu-contextual">
-                <ul class="nav nav-tabs">
-                    <li><a href="#;">Lorem Ipsum Dolor sit</a></li>
-                    <li class="active"><a href="#;">Lorem Ipsum Dolor sit</a></li>
-                    <li><a href="#;">Lorem Ipsum Dolor sit</a></li>
-                </ul> 
-                <div class="selectMenu selectBox">
-                    <div class="box">Lorem Ipsum Dolor sit</div>
-                </div>
-            </nav>
-             <div class="codeHtml">
-            <pre class="brush: js;">
-                <nav class="menu-contextual">
-                    <ul class="nav nav-tabs">
-                        <li><a href="#;">Lorem Ipsum Dolor sit</a></li>
-                        <li class="active"><a href="#;">Lorem Ipsum Dolor sit</a></li>
-                        <li><a href="#;">Lorem Ipsum Dolor sit</a></li>
-                    </ul> 
-                    <div class="selectMenu selectBox">
-                        <div class="box">Lorem Ipsum Dolor sit</div>
-                    </div>
-                </nav>
-            </pre>
+            <dl>
+    <dt>1. Atributos:</dt>
+        <dd>
+            Las pestañas son usadas para generar áreas de
+            interacción en simulares contextos de acción.
+        </dd>
+    <dt>2. Usabilidad:</dt>
+        <dd>
+            Las tabs seleccionadas tienen color enfatizado
+            (morado) y las no seleccionadas se generan en gris
+            claro.
+        </dd>
+    <dt>3. Reglas y restricciones:</dt>  
+        <dd>
+            Se aplican cuando en un mismo contexto se quieren
+generar diferencias funcionales o para dividir
+procesos que pueden ser muy largos de entender
+de una sola vez-
+        </dd>  
+</dl>
+
+<h4>Vista Mobile - Dropdown</h4>
+<p>
+    En la versión mobile las tabs son reemplazadas
+por dropdown, objetos que son similares a los
+combobox pero al no estar construidos por un
+elemento html sino por CSS, puede contener
+estilos visuales más complejos.</p>
+
+
+<nav class="menu-contextual">
+    <ul class="nav nav-tabs">
+        <li><a href="#;">Lorem Ipsum Dolor sit</a></li>
+        <li class="active"><a href="#;">Lorem Ipsum Dolor sit</a></li>
+        <li><a href="#;">Lorem Ipsum Dolor sit</a></li>
+    </ul> 
+    <div class="selectMenu selectBox">
+        <div class="box">Lorem Ipsum Dolor sit</div>
+    </div>
+</nav>
+<div class="codeHtml">
+    <pre class="brush: js;">
+        <nav class="menu-contextual">
+            <ul class="nav nav-tabs">
+                <li><a href="#;">Lorem Ipsum Dolor sit</a></li>
+                <li class="active"><a href="#;">Lorem Ipsum Dolor sit</a></li>
+                <li><a href="#;">Lorem Ipsum Dolor sit</a></li>
+            </ul> 
+            <div class="selectMenu selectBox">
+                <div class="box">Lorem Ipsum Dolor sit</div>
             </div>
+        </nav>
+    </pre>
+</div>   
         </section>
 
         <section id="checkbox">
             <h3>Checkbox - Radio button</h3>
+            <dl>
+    <dt>1. Atributos:</dt>
+        <dd>
+            Son elementos que generan selección de elementos
+            tanto combinados (checkbox) como excluyentes
+            (radiobutton). En ambos ambientes escritotio y
+            mobile miden 18x18px
+        </dd>
+    <dt>2. Usabilidad</dt>
+        <dd>
+            Los elementos no deben usarse en grupos de más de
+            10 elementos (recomendable) por la carga
+            memorística al usuario. En el caso que deban
+            ocuparse muchos es recomendable sub-agruparlos
+            por criterio.
+        </dd>
+        <dt>3. Reglas y restricciones</dt>
+            <dd>
+                Los checkboxes se utilizan para que el usuario haga
+                selecciones de ítems con la posibilidad de generar más
+                de una.
+                Los radio buttons se utilizaba para que el usuario
+                genere selección sobre ciertos ítems con una decisión
+                de exclusión con los no seleccionados.
+                !
+                Su apariencia puede cambiar según la interpretación
+                visual del navegador del usuario.ç
+            </dd>
+    </dl>            
 
             <input type="radio"/><label>Radio Button</label>
             <br />
             <input type="checkbox"/><label>Checkbox</label>
+            <div class="codeHtml">
+                <pre class="brush: js;">
+                    <input type="radio"/><label>Radio Button</label>
+                    <br />
+                    <input type="checkbox"/><label>Checkbox</label>
+                </pre>
+            </div>  
 
-            <pre class="brush: js;">
-                <input type="radio"/><label>Radio Button</label>
-                <br />
-                <input type="checkbox"/><label>Checkbox</label>
-            </pre>
         </section>
 
         <section id="dropdown">
             <h3>Dropdown</h3>
             <div class="selectBox ">
-                <div class="box">LOREMP IPSUM DOLOR SIT</div>
+    <div class="box">LOREMP IPSUM DOLOR SIT</div>
+    <select onchange="this.parentNode.getElementsByTagName('div')[0].innerHTML = this.options[this.selectedIndex].text">
+        <option>Lorem Ipsum Dolor sit</option>
+        <option>Lorem Ipsum Dolor sit</option>
+        <option>Lorem Ipsum Dolor sit</option>
+        <option>Lorem Ipsum Dolor sit</option>
+    </select>
+</div>
+<div class="codeHtml">
+    <pre class="brush: js;">
+        <div class="selectBox">
+            <div class="box">LOREMP IPSUM DOLOR SIT</div>
                 <select onchange="this.parentNode.getElementsByTagName('div')[0].innerHTML = this.options[this.selectedIndex].text">
                     <option>Lorem Ipsum Dolor sit</option>
                     <option>Lorem Ipsum Dolor sit</option>
                     <option>Lorem Ipsum Dolor sit</option>
                     <option>Lorem Ipsum Dolor sit</option>
                 </select>
-            </div>
-             <div class="codeHtml">
-            <pre class="brush: js;">
-                 <div class="selectBox">
-                    <div class="box">LOREMP IPSUM DOLOR SIT</div>
-                        <select onchange="this.parentNode.getElementsByTagName('div')[0].innerHTML = this.options[this.selectedIndex].text">
-                            <option>Lorem Ipsum Dolor sit</option>
-                            <option>Lorem Ipsum Dolor sit</option>
-                            <option>Lorem Ipsum Dolor sit</option>
-                            <option>Lorem Ipsum Dolor sit</option>
-                        </select>
-                    </div>
-            </pre>
-            </div>
+        </div>
+    </pre>
+</div>               
+
         </section>
 
         <section id="tablas" class="margin-tb">
@@ -198,32 +300,63 @@
                 Tablas
             </h2>
             <h3>Tablas de Presentacion</h3>
+
             <table class="table tabla-detalle-cliente">
-                <thead>
-                <th class="fullWidth">
-                    AUGUSTO ROBERTO BASTIDAS COLLAO
-                </th>
-                <th>
-                    Cuenta Vista: 0-000-03-92974-4
-                </th>
-                </thead>
-                <tr>
-                    <td>
-                    </td>
-                    <td>
-                        <table class="t-small f-right">
-                            <tr>
-                                <td class="pad-left">
-                                    Desde 02/01/2014
-                                </td>
-                                <td class="pad-left">
-                                    Hasta 02/02/2014
-                                </td>
-                            </tr>
-                        </table>
-                    </td>  
-                </tr>
-            </table>
+    <thead>
+    <th class="fullWidth">
+        AUGUSTO ROBERTO BASTIDAS COLLAO
+    </th>
+    <th>
+        Cuenta Vista: 0-000-03-92974-4
+    </th>
+</thead>
+<tr>
+    <td>
+    </td>
+    <td>
+        <table class="t-small f-right">
+            <tr>
+                <td class="pad-left">
+                    Desde 02/01/2014
+                </td>
+                <td class="pad-left">
+                    Hasta 02/02/2014
+                </td>
+            </tr>
+        </table>
+    </td>  
+</tr>
+</table>
+<div class="codeHtml">
+    <pre class="brush:js;">
+        <table class="table tabla-detalle-cliente">
+            <thead>
+            <th class="fullWidth">
+                AUGUSTO ROBERTO BASTIDAS COLLAO
+            </th>
+            <th>
+                Cuenta Vista: 0-000-03-92974-4
+            </th>
+        </thead>
+        <tr>
+            <td>
+            </td>
+            <td>
+                <table class="t-small f-right">
+                    <tr>
+                        <td class="pad-left">
+                            Desde 02/01/2014
+                        </td>
+                        <td class="pad-left">
+                            Hasta 02/02/2014
+                        </td>
+                    </tr>
+                </table>
+            </td>  
+        </tr>
+        </table>
+    </pre>
+</div> 
 
             <h3>Tabla Resumen</h3>
 
@@ -243,7 +376,7 @@
 
             </table>
             <div class="codeHtml">
-            <pre class="brush: js;">
+                <pre class="brush: js;">
                 <table class="table table-responsive tabla-resumen">
                     <thead>
                         <tr>
@@ -258,12 +391,12 @@
                         <td><b class="labelTable">Saldo Disponible($)</b>400.000</td>
                     </tr>
                 </table>
-            </pre>
+                </pre>
             </div>
 
             <h3>Tabla de Datos</h3>
 
-    <table class="table table-responsive table-hover table-striped">
+            <table class="table table-responsive table-hover table-striped">
     <thead>
         <tr>
             <th>
@@ -554,7 +687,7 @@
 
             <h3>Tabla de Selección de filas</h3>
 
-    <table class="table table-responsive table-hover table-striped">
+            <table class="table table-responsive table-hover table-striped">
     <thead>
         <tr>
             <th width="3%">
@@ -789,9 +922,10 @@
     </pre>    
 </div>             
 
+
             <h3>Selección Multiple de Filas</h3>
-            
-    <table class="table table-responsive table-hover table-striped">
+
+            <table class="table table-responsive table-hover table-striped">
     <thead>
         <tr>
             <th width="3%">
@@ -906,11 +1040,399 @@
     </tr>
 
 </table>
+<div class="codeHtml">
+    <pre class="brush:js;">
+        <table class="table table-responsive table-hover table-striped">
+            <thead>
+                <tr>
+                    <th width="3%">
 
-    
+                    </th>
+                    <th>
+                        Fecha
+                    </th>
+                    <th>
+                        Cargos($)
+                    </th>
+                    <th>
+                        Abonos($)
+                    </th>
+                    <th>
+                        Descripción
+                    </th>
+                    <th>
+                        Saldo Diario
+                    </th>
+                </tr>
+            </thead>
+            <tr class="opcion-tabla">
+                <td><input type="checkbox" name="cuenta"/></td>
+                <td>
+                    <b class="labelTable">Fecha</b><span>21/10/2014</span>
+                </td>
+                <td>
+                    <b class="labelTable">Cargos($)</b>
+                </td>
+                <td>
+                    <b class="labelTable">Abonos($) </b>1.440.000
+                </td>
+                <td>
+                    <b class="labelTable">Descripción </b>Traspaso Internet Cta Cte
+                </td>
+                <td>
+                    <b class="labelTable">Saldo Diario </b>1.440.000
+                </td>
+            </tr>
+            <tr class="opcion-tabla">
+                <td><input type="checkbox" name="cuenta"/></td>
+                <td>
+                    <b class="labelTable">Fecha</b><span>21/10/2014</span>
+                </td>
+                <td>
+                    <b class="labelTable">Cargos($)</b>
+                </td>
+                <td>
+                    <b class="labelTable">Abonos($) </b>1.440.000
+                </td>
+                <td>
+                    <b class="labelTable">Descripción </b>Traspaso Internet Cta Cte
+                </td>
+                <td>
+                    <b class="labelTable">Saldo Diario </b>1.440.000
+                </td>
+            </tr>
+            <tr class="opcion-tabla">
+                <td><input type="checkbox" name="cuenta"/></td>
+                <td>
+                    <b class="labelTable">Fecha</b><span>21/10/2014</span>
+                </td>
+                <td>
+                    <b class="labelTable">Cargos($)</b>
+                </td>
+                <td>
+                    <b class="labelTable">Abonos($) </b>1.440.000
+                </td>
+                <td>
+                    <b class="labelTable">Descripción </b>Traspaso Internet Cta Cte
+                </td>
+                <td>
+                    <b class="labelTable">Saldo Diario </b>1.440.000
+                </td>
+            </tr>
+            <tr class="opcion-tabla">
+                <td><input type="checkbox" name="cuenta"/></td>
+                <td>
+                    <b class="labelTable">Fecha</b><span>21/10/2014</span>
+                </td>
+                <td>
+                    <b class="labelTable">Cargos($)</b>
+                </td>
+                <td>
+                    <b class="labelTable">Abonos($) </b>1.440.000
+                </td>
+                <td>
+                    <b class="labelTable">Descripción </b>Traspaso Internet Cta Cte
+                </td>
+                <td>
+                    <b class="labelTable">Saldo Diario </b>1.440.000
+                </td>
+            </tr>
+            <tr class="opcion-tabla">
+                <td><input type="checkbox" name="cuenta"/></td>
+                <td>
+                    <b class="labelTable">Fecha</b><span>21/10/2014</span>
+                </td>
+                <td>
+                    <b class="labelTable">Cargos($)</b>
+                </td>
+                <td>
+                    <b class="labelTable">Abonos($) </b>1.440.000
+                </td>
+                <td>
+                    <b class="labelTable">Descripción </b>Traspaso Internet Cta Cte
+                </td>
+                <td>
+                    <b class="labelTable">Saldo Diario </b>1.440.000
+                </td>
+            </tr>
+
+        </table>
+    </pre>
+</div>
+
+            <h3>Filtro y busqueda de registros</h3>
+              <div class="filtro-busqueda">
+            <th colspan="6" class="text-right">
+                
+                <form method="post" action="">
+                    <fieldset>
+                        <label>Buscar</label>
+                            <div class="search_input">
+                                 <input class="form-control" type="text" value="" maxlength="20">
+                                <a class="search_button search" href="#"></a>
+                            </div>
+                    </fieldset>
+                </form>
+            </th>
+        </div>
+
+<table class="table table-responsive table-hover table-striped">
+    <thead>
+      
+        <tr>
+            <th width="3%">
+
+            </th>
+            <th>
+                Fecha
+            </th>
+            <th>
+                Cargos($)
+            </th>
+            <th>
+                Abonos($)
+            </th>
+            <th>
+                Descripción
+            </th>
+            <th>
+                Saldo Diario
+            </th>
+        </tr>
+    </thead>
+    <tr class="opcion-tabla">
+        <td><input type="radio" name="cuenta"/></td>
+        <td>
+            <b class="labelTable">Fecha</b><span>21/10/2014</span>
+        </td>
+        <td>
+            <b class="labelTable">Cargos($)</b>
+        </td>
+        <td>
+            <b class="labelTable">Abonos($) </b>1.440.000
+        </td>
+        <td>
+            <b class="labelTable">Descripción </b>Traspaso Internet Cta Cte
+        </td>
+        <td>
+            <b class="labelTable">Saldo Diario </b>1.440.000
+        </td>
+    </tr>
+    <tr class="opcion-tabla">
+        <td><input type="radio" name="cuenta"/></td>
+        <td>
+            <b class="labelTable">Fecha</b><span>21/10/2014</span>
+        </td>
+        <td>
+            <b class="labelTable">Cargos($)</b>
+        </td>
+        <td>
+            <b class="labelTable">Abonos($) </b>1.440.000
+        </td>
+        <td>
+            <b class="labelTable">Descripción </b>Traspaso Internet Cta Cte
+        </td>
+        <td>
+            <b class="labelTable">Saldo Diario </b>1.440.000
+        </td>
+    </tr>
+    <tr class="opcion-tabla">
+        <td><input type="radio" name="cuenta"/></td>
+        <td>
+            <b class="labelTable">Fecha</b><span>21/10/2014</span>
+        </td>
+        <td>
+            <b class="labelTable">Cargos($)</b>
+        </td>
+        <td>
+            <b class="labelTable">Abonos($) </b>1.440.000
+        </td>
+        <td>
+            <b class="labelTable">Descripción </b>Traspaso Internet Cta Cte
+        </td>
+        <td>
+            <b class="labelTable">Saldo Diario </b>1.440.000
+        </td>
+    </tr>
+    <tr class="opcion-tabla">
+        <td><input type="radio" name="cuenta"/></td>
+        <td>
+            <b class="labelTable">Fecha</b><span>21/10/2014</span>
+        </td>
+        <td>
+            <b class="labelTable">Cargos($)</b>
+        </td>
+        <td>
+            <b class="labelTable">Abonos($) </b>1.440.000
+        </td>
+        <td>
+            <b class="labelTable">Descripción </b>Traspaso Internet Cta Cte
+        </td>
+        <td>
+            <b class="labelTable">Saldo Diario </b>1.440.000
+        </td>
+    </tr>
+    <tr class="opcion-tabla">
+        <td><input type="radio" name="cuenta"/></td>
+        <td>
+            <b class="labelTable">Fecha</b><span>21/10/2014</span>
+        </td>
+        <td>
+            <b class="labelTable">Cargos($)</b>
+        </td>
+        <td>
+            <b class="labelTable">Abonos($) </b>1.440.000
+        </td>
+        <td>
+            <b class="labelTable">Descripción </b>Traspaso Internet Cta Cte
+        </td>
+        <td>
+            <b class="labelTable">Saldo Diario </b>1.440.000
+        </td>
+    </tr>
+
+</table>
+<h3>HTML</h3>
+<div class="codeHtml">
+    <pre class="brush:js;">
+
+        <table class="table table-responsive table-hover table-striped">
+            <thead>
+
+                <tr>
+                    <th width="3%">
+
+                    </th>
+                    <th>
+                        Fecha
+                    </th>
+                    <th>
+                        Cargos($)
+                    </th>
+                    <th>
+                        Abonos($)
+                    </th>
+                    <th>
+                        Descripción
+                    </th>
+                    <th>
+                        Saldo Diario
+                    </th>
+                </tr>
+            </thead>
+            <tr class="opcion-tabla">
+                <td><input type="radio" name="cuenta"/></td>
+                <td>
+                    <b class="labelTable">Fecha</b><span>21/10/2014</span>
+                </td>
+                <td>
+                    <b class="labelTable">Cargos($)</b>
+                </td>
+                <td>
+                    <b class="labelTable">Abonos($) </b>1.440.000
+                </td>
+                <td>
+                    <b class="labelTable">Descripción </b>Traspaso Internet Cta Cte
+                </td>
+                <td>
+                    <b class="labelTable">Saldo Diario </b>1.440.000
+                </td>
+            </tr>
+            <tr class="opcion-tabla">
+                <td><input type="radio" name="cuenta"/></td>
+                <td>
+                    <b class="labelTable">Fecha</b><span>21/10/2014</span>
+                </td>
+                <td>
+                    <b class="labelTable">Cargos($)</b>
+                </td>
+                <td>
+                    <b class="labelTable">Abonos($) </b>1.440.000
+                </td>
+                <td>
+                    <b class="labelTable">Descripción </b>Traspaso Internet Cta Cte
+                </td>
+                <td>
+                    <b class="labelTable">Saldo Diario </b>1.440.000
+                </td>
+            </tr>
+            <tr class="opcion-tabla">
+                <td><input type="radio" name="cuenta"/></td>
+                <td>
+                    <b class="labelTable">Fecha</b><span>21/10/2014</span>
+                </td>
+                <td>
+                    <b class="labelTable">Cargos($)</b>
+                </td>
+                <td>
+                    <b class="labelTable">Abonos($) </b>1.440.000
+                </td>
+                <td>
+                    <b class="labelTable">Descripción </b>Traspaso Internet Cta Cte
+                </td>
+                <td>
+                    <b class="labelTable">Saldo Diario </b>1.440.000
+                </td>
+            </tr>
+            <tr class="opcion-tabla">
+                <td><input type="radio" name="cuenta"/></td>
+                <td>
+                    <b class="labelTable">Fecha</b><span>21/10/2014</span>
+                </td>
+                <td>
+                    <b class="labelTable">Cargos($)</b>
+                </td>
+                <td>
+                    <b class="labelTable">Abonos($) </b>1.440.000
+                </td>
+                <td>
+                    <b class="labelTable">Descripción </b>Traspaso Internet Cta Cte
+                </td>
+                <td>
+                    <b class="labelTable">Saldo Diario </b>1.440.000
+                </td>
+            </tr>
+            <tr class="opcion-tabla">
+                <td><input type="radio" name="cuenta"/></td>
+                <td>
+                    <b class="labelTable">Fecha</b><span>21/10/2014</span>
+                </td>
+                <td>
+                    <b class="labelTable">Cargos($)</b>
+                </td>
+                <td>
+                    <b class="labelTable">Abonos($) </b>1.440.000
+                </td>
+                <td>
+                    <b class="labelTable">Descripción </b>Traspaso Internet Cta Cte
+                </td>
+                <td>
+                    <b class="labelTable">Saldo Diario </b>1.440.000
+                </td>
+            </tr>
+        </table>
+    </pre>    
+</div>      
+            <div class="contenedor busqueda-avanzada">
+                <button class="btn btn-trans f-right">Busqueda avanzada</button>
+                <div class="row busqueda_panel">
+                    <form>
+                        <div class="column6">
+                            <label>Busqueda por termino</label>
+                            <div class="input-group">
+                                <input class="form-control" type="text"/>
+                            </div>
+                        </div>
+                        <div class="column6 last">
+                            <label>Busqueda por Fecha</label>
+                        </div>
+                    </form>
+                </div>
+            </div>  
+
         </section>
-    
-    <section id="paginador" class="margin-tb">
+
+        <section id="paginador" class="margin-tb">
     <h3>Paginador</h3>
     <footer class="table-paginador">
         <ul class="utilidad hide-on-phones">
@@ -923,6 +1445,24 @@
             <li class="f-left"><a href="#"><span>Siguiente</span><i class="icon-small f-right siguiente"></i></a></li>
         </ul>
     </footer>
+    <div class="codeHtml">
+    <pre class="brush:js;">
+        
+            <footer class="table-paginador">
+                <ul class="utilidad hide-on-phones">
+                    <li><a href="#"><i class="icon-small"></i>Descargar PDF</a></li>
+                    <li><a href="#"><i class="icon-small"></i>Descargar Excel</a></li>
+                    <li><a href="#"><i class="icon-small"></i>Enviar por e-mail</a></li>
+                </ul>
+                <ul class="paginador f-right">
+                    <li class="f-left"><a href="#"><i class="icon-small anterior"></i><span>Anterior</span></a></li>
+                    <li class="f-left"><a href="#"><span>Siguiente</span><i class="icon-small f-right siguiente"></i></a></li>
+                </ul>
+            </footer>
+        
+    </pre>
+    </div>
+
 </section>    
     </div>
 </div>

@@ -7,92 +7,27 @@
     </div>
     <div class="column9 last fullWidth">
 
-
         <section id="botones">
             <h2>Elementos de Interfaz</h2>
             <h3>Botones</h3>
-            <p></p>
-
-            <button class="btn btn-trans">Boton Transaccional</button>
-            <button class="btn btn-en">Boton Enfatizado</button>
-            <button class="btn btn-se">Boton Normal</button>
-
-            <div class="codeHtml">
-                <pre class="brush: js;">
-                    <button class="btn btn-trans">Boton Transaccional</button>
-                    <button class="btn btn-en">Boton Enfatizado</button>
-                    <button class="btn btn-se">Boton Normal</button>
-                </pre>
-            </div>
-        </section>
-
+            <!-- @include componentes/_botones.html -->        
+        </section>    
         <section id="tabs">
             <h3>Tabs</h3>
 
-            <nav class="menu-contextual">
-                <ul class="nav nav-tabs">
-                    <li><a href="#;">Lorem Ipsum Dolor sit</a></li>
-                    <li class="active"><a href="#;">Lorem Ipsum Dolor sit</a></li>
-                    <li><a href="#;">Lorem Ipsum Dolor sit</a></li>
-                </ul> 
-                <div class="selectMenu selectBox">
-                    <div class="box">Lorem Ipsum Dolor sit</div>
-                </div>
-            </nav>
-             <div class="codeHtml">
-            <pre class="brush: js;">
-                <nav class="menu-contextual">
-                    <ul class="nav nav-tabs">
-                        <li><a href="#;">Lorem Ipsum Dolor sit</a></li>
-                        <li class="active"><a href="#;">Lorem Ipsum Dolor sit</a></li>
-                        <li><a href="#;">Lorem Ipsum Dolor sit</a></li>
-                    </ul> 
-                    <div class="selectMenu selectBox">
-                        <div class="box">Lorem Ipsum Dolor sit</div>
-                    </div>
-                </nav>
-            </pre>
-            </div>
+            <!-- @include componentes/_tabs.html -->   
         </section>
 
         <section id="checkbox">
             <h3>Checkbox - Radio button</h3>
+            <!-- @include componentes/_checkbox.html -->  
 
-            <input type="radio"/><label>Radio Button</label>
-            <br />
-            <input type="checkbox"/><label>Checkbox</label>
-
-            <pre class="brush: js;">
-                <input type="radio"/><label>Radio Button</label>
-                <br />
-                <input type="checkbox"/><label>Checkbox</label>
-            </pre>
         </section>
 
         <section id="dropdown">
             <h3>Dropdown</h3>
-            <div class="selectBox ">
-                <div class="box">LOREMP IPSUM DOLOR SIT</div>
-                <select onchange="this.parentNode.getElementsByTagName('div')[0].innerHTML = this.options[this.selectedIndex].text">
-                    <option>Lorem Ipsum Dolor sit</option>
-                    <option>Lorem Ipsum Dolor sit</option>
-                    <option>Lorem Ipsum Dolor sit</option>
-                    <option>Lorem Ipsum Dolor sit</option>
-                </select>
-            </div>
-             <div class="codeHtml">
-            <pre class="brush: js;">
-                 <div class="selectBox">
-                    <div class="box">LOREMP IPSUM DOLOR SIT</div>
-                        <select onchange="this.parentNode.getElementsByTagName('div')[0].innerHTML = this.options[this.selectedIndex].text">
-                            <option>Lorem Ipsum Dolor sit</option>
-                            <option>Lorem Ipsum Dolor sit</option>
-                            <option>Lorem Ipsum Dolor sit</option>
-                            <option>Lorem Ipsum Dolor sit</option>
-                        </select>
-                    </div>
-            </pre>
-            </div>
+            <!-- @include componentes/_dropdown.html -->               
+
         </section>
 
         <section id="tablas" class="margin-tb">
@@ -100,32 +35,8 @@
                 Tablas
             </h2>
             <h3>Tablas de Presentacion</h3>
-            <table class="table tabla-detalle-cliente">
-                <thead>
-                <th class="fullWidth">
-                    AUGUSTO ROBERTO BASTIDAS COLLAO
-                </th>
-                <th>
-                    Cuenta Vista: 0-000-03-92974-4
-                </th>
-                </thead>
-                <tr>
-                    <td>
-                    </td>
-                    <td>
-                        <table class="t-small f-right">
-                            <tr>
-                                <td class="pad-left">
-                                    Desde 02/01/2014
-                                </td>
-                                <td class="pad-left">
-                                    Hasta 02/02/2014
-                                </td>
-                            </tr>
-                        </table>
-                    </td>  
-                </tr>
-            </table>
+
+            <!-- @include componentes/_tabla-presentacion.html --> 
 
             <h3>Tabla Resumen</h3>
 
@@ -145,7 +56,7 @@
 
             </table>
             <div class="codeHtml">
-            <pre class="brush: js;">
+                <pre class="brush: js;">
                 <table class="table table-responsive tabla-resumen">
                     <thead>
                         <tr>
@@ -160,25 +71,44 @@
                         <td><b class="labelTable">Saldo Disponible($)</b>400.000</td>
                     </tr>
                 </table>
-            </pre>
+                </pre>
             </div>
 
             <h3>Tabla de Datos</h3>
 
-    <!-- @include componentes/_tabla-datos.html -->               
+            <!-- @include componentes/_tabla-datos.html -->               
 
             <h3>Tabla de Selección de filas</h3>
 
-    <!-- @include componentes/_tabla-seleccion-filas.html -->         
+            <!-- @include componentes/_tabla-seleccion-filas.html -->         
+
 
             <h3>Selección Multiple de Filas</h3>
-            
-    <!-- @include componentes/_tabla-seleccion-multiple.html -->
 
-    
+            <!-- @include componentes/_tabla-seleccion-multiple.html -->
+
+            <h3>Filtro y busqueda de registros</h3>
+            <!-- @include componentes/_tabla-filtro-de-busqueda.html -->  
+            <div class="contenedor busqueda-avanzada">
+                <button class="btn btn-trans f-right">Busqueda avanzada</button>
+                <div class="row busqueda_panel">
+                    <form>
+                        <div class="column6">
+                            <label>Busqueda por termino</label>
+                            <div class="input-group">
+                                <input class="form-control" type="text"/>
+                            </div>
+                        </div>
+                        <div class="column6 last">
+                            <label>Busqueda por Fecha</label>
+                        </div>
+                    </form>
+                </div>
+            </div>  
+
         </section>
-    
-    <!-- @include componentes/_paginador.html -->    
+
+        <!-- @include componentes/_paginador.html -->    
     </div>
 </div>
 

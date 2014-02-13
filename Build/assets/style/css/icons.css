@@ -122,3 +122,11 @@
   margin-top: 5px !important;
   display: block;
 }
+.icon-medium.search {
+  display: block;
+  float: none;
+  margin: 0 auto;
+}
+.search {
+  background: url(../../img/search_icon.png) no-repeat center;
+}

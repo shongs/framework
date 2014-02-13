@@ -58,6 +58,50 @@ h2 {
 h3 {
   font-size: 18px;
 }
+h4 {
+  font-size: 16px;
+}
 .syntaxhighlighter {
   height: 200px;
+}
+.codeHtml {
+  float: left;
+  width: 100%;
+}
+/*Filtro de busqueda en grilla*/
+.filtro-busqueda .form-control {
+  display: inline-block;
+  position: relative;
+  width: 200px;
+}
+.filtro-busqueda {
+  font-size: 12px;
+  padding: 10px 0px;
+  text-align: right;
+}
+.filtro-busqueda label {
+  padding: 0 10px;
+}
+dd > dl {
+  margin: 10px;
+}
+dd > dl > dd {
+  margin-bottom: 10px;
+}
+dl > dd {
+  margin-bottom: 20px;
+}
+/*busqueda avanzada*/
+.busqueda-avanzada {
+  border: none;
+  border-radius: 5px;
+  float: left;
+  min-height: 100px;
+  width: 100%;
+}
+.busqueda_panel {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.05);
+  float: left;
+  padding: 20px;
+  width: 100%;
 }
