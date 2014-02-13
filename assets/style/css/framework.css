@@ -58,3 +58,6 @@ h2 {
 h3 {
   font-size: 18px;
 }
+.syntaxhighlighter {
+  height: 200px;
+}
