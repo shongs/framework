@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="all" href="assets/style/css/reset.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="assets/style/css/grid.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="assets/style/css/components.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="assets/style/css/header.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="assets/style/css/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="assets/style/css/style.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="assets/style/css/icons.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="assets/style/css/adapt.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="assets/style/css/framework.css" />
+
+        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/collapse.js"></script>
+        <script src="assets/js/transition.js"></script>
+        <script src="assets/js/script.js"></script>
+
+
+        <script type="text/javascript" src="assets/js/scripts/shCore.js"></script>
+        <script type="text/javascript" src="assets/js/scripts/shBrushJScript.js"></script>
+        <link type="text/css" rel="stylesheet" href="assets/js/styles/shCoreDefault.css"/>
+        <script type="text/javascript">SyntaxHighlighter.all();</script>
+        
+        <link rel="stylesheet" href="assets/style/css/table.css">
+        <title> Banco Ripley</title>
+    </head>
+    <body>
+        <div class="row-offcanvas row-offcanvas-left">
+            <header id="corporativo" class="main-head">
+                <nav id="menu-corporativo" class="navbar menu-ripley" role="navigation">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navTop">
+            <img src="assets/img/arrow_menu.png"/>
+        </button>
+        <div class="navbar-brand">FRAMEWORK BANCO RIPLEY</div>
+    </div>
+    <div class="collapse navbar-collapse" id="navTop">
+        <ul class="nav">
+            <li><a href="index.html" title="enlace a Tienda" rel="">Organización y Navegacion</a></li>
+            <li><a href="elementos_interfaz.html" title="enlace a Tarjeta Ripley" rel="">Elementos de Interfaz</a></li>
+            <li><a href="#" title="enlace a Ripley Puntos" rel="">Componentes</a></li>
+            <li><a href="#" title="enlace a Banco Ripley" rel="">Accesibilidad</a></li>
+            
+        </ul>
+    </div>
+</nav>
+
+            </header>
+
+<div class="row">
+
+<div class="column3 pad-tb menuLateral">
+      
+<p class="pull-left visible-xs ">
+    <button type="button" class="btn btn-trans navbar-toggle" data-toggle="offcanvas">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+</p>
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+    <nav id="menu-productos" class="nav-general">
+        <ul class="ripleyCartolas">	
+            <li><a href="#esquema_ai">Esquema general de AI</a></li>
+            <li><a href="#layouts">Layouts</a></li>
+            <li><a href="#grilla">Retículas</a></li>
+            <li><a href="#navPortal">Menús</a></li>
+            <li><a href="#navPortal">Menú navegación de portal</a></li>
+            <li><a href="#menuMacro">Menú macro</a></li>
+            <li><a href="#menuGral">Menú General</a></li>
+            <li><a href="#submenu_contexto">Submenú de contexto y funcionalidad</a></li>
+            <li><a href="#area_header">Área header</a></li>
+            <li><a href="#area_footer">Área footer</a></li>
+            <li><a href="#breadcrumds">Breadcrumbs</a></li>
+            <li><a href="#promociones_ofertas">Promociones y ofertas</a></li>
+         </ul>
+</div>
+    </div>
+    <div class="column9 last">
+    <section id="organizacion" class="12 last fullWidth pad-tb">
+
+
+        <h2>Organización y Navegación</h2>
+        <h3> Grilla Responsive</h3>
+        <div class="gridResponsive row fullWidth">
+            <div class="column1"></div>
+            <div class="column1"></div>
+            <div class="column1"></div>
+            <div class="column1"></div>
+            <div class="column1"></div>
+            <div class="column1"></div>
+            <div class="column1"></div>
+            <div class="column1"></div>
+            <div class="column1"></div>
+            <div class="column1"></div>
+            <div class="column1"></div>
+            <div class="column1 last"></div>
+        </div>
+    </section>
+    <div id="interfaz">
+    <section id="botones">
+        <h2>Elementos de Interfaz</h2>
+        <h3>Botones</h3>
+        <p></p>
+
+        <button class="btn btn-trans">Boton Transaccional</button>
+        <button class="btn btn-en">Boton Enfatizado</button>
+        <button class="btn btn-se">Boton Normal</button>
+    </section>
+    <section id="dropdown">
+        <h3>Dropdown</h3>
+        <div class="selectBox ">
+            <div class="box">LOREMP IPSUM DOLOR SIT</div>
+                <select onchange="this.parentNode.getElementsByTagName('div')[0].innerHTML = this.options[this.selectedIndex].text">
+                    <option>Lorem Ipsum Dolor sit</option>
+                    <option>Lorem Ipsum Dolor sit</option>
+                    <option>Lorem Ipsum Dolor sit</option>
+                    <option>Lorem Ipsum Dolor sit</option>
+                </select>
+            </div>
+        
+    </section>
+    <section id="tabs">
+        <h3>Tabs</h3>
+
+            <nav class="menu-contextual">
+                <ul class="nav nav-tabs">
+                <li><a href="#;">Lorem Ipsum Dolor sit</a></li>
+                <li class="active"><a href="#;">Lorem Ipsum Dolor sit</a></li>
+                <li><a href="#;">Lorem Ipsum Dolor sit</a></li>
+                </ul> 
+                <div class="selectMenu selectBox">
+                    <div class="box">Lorem Ipsum Dolor sit</div>
+                </div>
+            </nav>
+    </section>
+    <section id="tablas">
+        <h2>
+            Tablas
+        </h2>
+        <h3>Tablas de Presentacion</h3>
+        <table class="table tabla-detalle-cliente">
+          <thead>
+            <th class="fullWidth">
+              AUGUSTO ROBERTO BASTIDAS COLLAO
+            </th>
+            <th>
+              Cuenta Vista: 0-000-03-92974-4
+            </th>
+          </thead>
+          <tr>
+            <td>
+            </td>
+            <td>
+              <table class="t-small f-right">
+                <tr>
+                  <td class="pad-left">
+                      Desde 02/01/2014
+                  </td>
+                  <td class="pad-left">
+                    Hasta 02/02/2014
+                  </td>
+                </tr>
+              </table>
+            </td>  
+          </tr>
+        </table>
+
+        <h3>Tabla de Datos</h3>
+
+        <table class="table table-responsive table-hover table-striped">
+        <thead>
+          <tr>
+            <th>
+              Fecha
+            </th>
+            <th>
+              Cargos($)
+            </th>
+            <th>
+              Abonos($)
+            </th>
+            <th>
+              Descripción
+            </th>
+            <th>
+              Saldo Diario
+            </th>
+          </tr>
+        </thead>
+        <tr>
+          <td>
+            <b class="labelTable">Fecha</b>21/10/2014
+          </td>
+          <td>
+            <b class="labelTable">Cargos($)</b>
+          </td>
+          <td>
+            <b class="labelTable">Abonos($) </b>1.440.000
+          </td>
+          <td>
+            <b class="labelTable">Descripción </b>Traspaso Internet Cta Cte
+          </td>
+          <td>
+            <b class="labelTable">Saldo Diario </b>1.440.000
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <b class="labelTable">Fecha</b>21/10/2014
+          </td>
+          <td>
+            <b class="labelTable">Cargos($)</b>100.000
+          </td>
+          <td>
+            <b class="labelTable">Abonos($) </b>
+          </td>
+          <td>
+            <b class="labelTable">Descripción </b>Traspaso Internet Cta Cte
+          </td>
+          <td>
+            <b class="labelTable">Saldo Diario </b>1.340.000
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <b class="labelTable">Fecha</b>21/10/2014
+          </td>
+          <td>
+            <b class="labelTable">Cargos($)</b>100.000
+          </td>
+          <td>
+            <b class="labelTable">Abonos($) </b>
+          </td>
+          <td>
+            <b class="labelTable">Descripción </b>Traspaso Internet Cta Cte
+          </td>
+          <td>
+            <b class="labelTable">Saldo Diario </b>1.240.000
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <b class="labelTable">Fecha</b>21/10/2014
+          </td>
+          <td>
+            <b class="labelTable">Cargos($)</b>100.000
+          </td>
+          <td>
+            <b class="labelTable">Abonos($)</b>
+          </td>
+          <td>
+            <b class="labelTable">Descripción </b>Traspaso Internet Cta Cte
+          </td>
+          <td>
+            <b class="labelTable">Saldo Diario </b>1.140.000
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <b class="labelTable">Fecha</b>21/10/2014
+          </td>
+          <td>
+            <b class="labelTable">Cargos($)</b>100.000
+          </td>
+          <td>
+            <b class="labelTable">Abonos($) </b>
+          </td>
+          <td>
+            <b class="labelTable">Descripción </b>Traspaso Internet Cta Cte
+          </td>
+          <td>
+            <b class="labelTable">Saldo Diario </b>1.140.000
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <b class="labelTable">Fecha</b>21/10/2014
+          </td>
+          <td>
+            <b class="labelTable">Cargos($)</b>100.000
+          </td>
+          <td>
+            <b class="labelTable">Abonos($)</b>
+          </td>
+          <td>
+            <b class="labelTable">Descripción</b>Traspaso Internet Cta Cte
+          </td>
+          <td>
+            <b class="labelTable">Saldo Diario</b>1.140.000
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <b class="labelTable">Fecha</b>21/10/2014
+          </td>
+          <td>
+            <b class="labelTable">Cargos($)</b>100.000
+          </td>
+          <td>
+            <b class="labelTable">Abonos($) </b>
+          </td>
+          <td>
+            <b class="labelTable">Descripción </b>Traspaso Internet Cta Cte
+          </td>
+          <td>
+            <b class="labelTable">Saldo Diario </b>1.140.000
+          </td>
+        </tr>
+      </table>
+
+      <h3>Tabla de Selección de filas</h3>
+
+       <table class="table table-responsive table-hover table-striped">
+        <thead>
+          <tr>
+            <th width="3%">
+
+            </th>
+            <th>
+              Fecha
+            </th>
+            <th>
+              Cargos($)
+            </th>
+            <th>
+              Abonos($)
+            </th>
+            <th>
+              Descripción
+            </th>
+            <th>
+              Saldo Diario
+            </th>
+          </tr>
+        </thead>
+        <tr class="opcion-tabla">
+          <td><input type="radio" name="cuenta"/></td>
+          <td>
+            <b class="labelTable">Fecha</b><span>21/10/2014</span>
+          </td>
+          <td>
+            <b class="labelTable">Cargos($)</b>
+          </td>
+          <td>
+            <b class="labelTable">Abonos($) </b>1.440.000
+          </td>
+          <td>
+            <b class="labelTable">Descripción </b>Traspaso Internet Cta Cte
+          </td>
+          <td>
+            <b class="labelTable">Saldo Diario </b>1.440.000
+          </td>
+        </tr>
+        <tr class="opcion-tabla">
+          <td><input type="radio" name="cuenta"/></td>
+          <td>
+            <b class="labelTable">Fecha</b><span>21/10/2014</span>
+          </td>
+          <td>
+            <b class="labelTable">Cargos($)</b>
+          </td>
+          <td>
+            <b class="labelTable">Abonos($) </b>1.440.000
+          </td>
+          <td>
+            <b class="labelTable">Descripción </b>Traspaso Internet Cta Cte
+          </td>
+          <td>
+            <b class="labelTable">Saldo Diario </b>1.440.000
+          </td>
+        </tr>
+        <tr class="opcion-tabla">
+          <td><input type="radio" name="cuenta"/></td>
+          <td>
+            <b class="labelTable">Fecha</b><span>21/10/2014</span>
+          </td>
+          <td>
+            <b class="labelTable">Cargos($)</b>
+          </td>
+          <td>
+            <b class="labelTable">Abonos($) </b>1.440.000
+          </td>
+          <td>
+            <b class="labelTable">Descripción </b>Traspaso Internet Cta Cte
+          </td>
+          <td>
+            <b class="labelTable">Saldo Diario </b>1.440.000
+          </td>
+        </tr>
+        <tr class="opcion-tabla">
+          <td><input type="radio" name="cuenta"/></td>
+          <td>
+            <b class="labelTable">Fecha</b><span>21/10/2014</span>
+          </td>
+          <td>
+            <b class="labelTable">Cargos($)</b>
+          </td>
+          <td>
+            <b class="labelTable">Abonos($) </b>1.440.000
+          </td>
+          <td>
+            <b class="labelTable">Descripción </b>Traspaso Internet Cta Cte
+          </td>
+          <td>
+            <b class="labelTable">Saldo Diario </b>1.440.000
+          </td>
+        </tr>
+        <tr class="opcion-tabla">
+          <td><input type="radio" name="cuenta"/></td>
+          <td>
+            <b class="labelTable">Fecha</b><span>21/10/2014</span>
+          </td>
+          <td>
+            <b class="labelTable">Cargos($)</b>
+          </td>
+          <td>
+            <b class="labelTable">Abonos($) </b>1.440.000
+          </td>
+          <td>
+            <b class="labelTable">Descripción </b>Traspaso Internet Cta Cte
+          </td>
+          <td>
+            <b class="labelTable">Saldo Diario </b>1.440.000
+          </td>
+        </tr>
+       
+      </table>
+
+      <h3>Selección Multiple de Filas</h3>
+      <table class="table table-responsive table-hover table-striped">
+        <thead>
+          <tr>
+            <th width="3%">
+
+            </th>
+            <th>
+              Fecha
+            </th>
+            <th>
+              Cargos($)
+            </th>
+            <th>
+              Abonos($)
+            </th>
+            <th>
+              Descripción
+            </th>
+            <th>
+              Saldo Diario
+            </th>
+          </tr>
+        </thead>
+        <tr class="opcion-tabla">
+          <td><input type="checkbox" name="cuenta"/></td>
+          <td>
+            <b class="labelTable">Fecha</b><span>21/10/2014</span>
+          </td>
+          <td>
+            <b class="labelTable">Cargos($)</b>
+          </td>
+          <td>
+            <b class="labelTable">Abonos($) </b>1.440.000
+          </td>
+          <td>
+            <b class="labelTable">Descripción </b>Traspaso Internet Cta Cte
+          </td>
+          <td>
+            <b class="labelTable">Saldo Diario </b>1.440.000
+          </td>
+        </tr>
+        <tr class="opcion-tabla">
+          <td><input type="checkbox" name="cuenta"/></td>
+          <td>
+            <b class="labelTable">Fecha</b><span>21/10/2014</span>
+          </td>
+          <td>
+            <b class="labelTable">Cargos($)</b>
+          </td>
+          <td>
+            <b class="labelTable">Abonos($) </b>1.440.000
+          </td>
+          <td>
+            <b class="labelTable">Descripción </b>Traspaso Internet Cta Cte
+          </td>
+          <td>
+            <b class="labelTable">Saldo Diario </b>1.440.000
+          </td>
+        </tr>
+        <tr class="opcion-tabla">
+          <td><input type="checkbox" name="cuenta"/></td>
+          <td>
+            <b class="labelTable">Fecha</b><span>21/10/2014</span>
+          </td>
+          <td>
+            <b class="labelTable">Cargos($)</b>
+          </td>
+          <td>
+            <b class="labelTable">Abonos($) </b>1.440.000
+          </td>
+          <td>
+            <b class="labelTable">Descripción </b>Traspaso Internet Cta Cte
+          </td>
+          <td>
+            <b class="labelTable">Saldo Diario </b>1.440.000
+          </td>
+        </tr>
+        <tr class="opcion-tabla">
+          <td><input type="checkbox" name="cuenta"/></td>
+          <td>
+            <b class="labelTable">Fecha</b><span>21/10/2014</span>
+          </td>
+          <td>
+            <b class="labelTable">Cargos($)</b>
+          </td>
+          <td>
+            <b class="labelTable">Abonos($) </b>1.440.000
+          </td>
+          <td>
+            <b class="labelTable">Descripción </b>Traspaso Internet Cta Cte
+          </td>
+          <td>
+            <b class="labelTable">Saldo Diario </b>1.440.000
+          </td>
+        </tr>
+        <tr class="opcion-tabla">
+          <td><input type="checkbox" name="cuenta"/></td>
+          <td>
+            <b class="labelTable">Fecha</b><span>21/10/2014</span>
+          </td>
+          <td>
+            <b class="labelTable">Cargos($)</b>
+          </td>
+          <td>
+            <b class="labelTable">Abonos($) </b>1.440.000
+          </td>
+          <td>
+            <b class="labelTable">Descripción </b>Traspaso Internet Cta Cte
+          </td>
+          <td>
+            <b class="labelTable">Saldo Diario </b>1.440.000
+          </td>
+        </tr>
+       
+      </table>
+
+    </section>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+<footer id="main-footer">
+	<div class="info-footer row">
+		<div class="column4">
+			<div class="info-telefonos">
+				<div class="img-telefono"><img src="assets/img/telefono.png"/></div>
+				<div class="telefono">Banca Tel&eacute;fonica<div class="numero-telefono">800 20 32</div></div>
+				<div class="telefono">Desde Celulares<div class="numero-telefono">(02) 2 694 41 690</div></div>
+			</div>	
+		</div>
+		<div class="column4">
+			<div class="info-corporativa">
+				<p>Informaci&oacute;n Corporativa</p>
+					<ul>
+						<li><a href="#">Pizarra de Tasas</a></li>
+						<li><a href="#">Tarifas y Gastos</a></li>
+						<li><a href="#">Defensoria del Cliente Bancario</a></li>
+						<li><a href="#">Gu&iacute;a para el Cliente Bancario</a></li>
+						<li><a href="#">C&oacute;digo de Buena Conducto y Buenas Pr&aacute;cticas de Bancos e Instituciones Financieras</a></li>
+					</ul>
+			</div>		
+		</div>
+		<div class="column4 last">
+			<div class="info-logo">
+				<img src="assets/img/bripley-logofooter.png">
+			</div>	
+		</div>
+	</div>
+	<div class="legal">
+		<p>Inf&oacute;rmese  sobre la garant&iacute;a estatal de los dep&oacute;sitos en su banco o en <a href="#">sbif.cl</a> BancoRipley.cl  Copyright 2002-2003 - Todos los derechos reservados. </p>
+	</div>
+
+</footer>
+</body>
+
+</html>

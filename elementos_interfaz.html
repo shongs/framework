@@ -1,0 +1,564 @@
+<!-- @include _header -->
+
+<div class="row">
+
+    <div class="column3 pad-tb menuLateral">
+        <!-- @include _menu-interfaz -->
+    </div>
+    <div class="column9 last fullWidth">
+
+
+        <section id="botones">
+            <h2>Elementos de Interfaz</h2>
+            <h3>Botones</h3>
+            <p></p>
+
+            <button class="btn btn-trans">Boton Transaccional</button>
+            <button class="btn btn-en">Boton Enfatizado</button>
+            <button class="btn btn-se">Boton Normal</button>
+
+            <div class="codeHtml">
+                <pre class="brush: js;">
+                    <button class="btn btn-trans">Boton Transaccional</button>
+                    <button class="btn btn-en">Boton Enfatizado</button>
+                    <button class="btn btn-se">Boton Normal</button>
+                </pre>
+            </div>
+        </section>
+
+        <section id="tabs">
+            <h3>Tabs</h3>
+
+            <nav class="menu-contextual">
+                <ul class="nav nav-tabs">
+                    <li><a href="#;">Lorem Ipsum Dolor sit</a></li>
+                    <li class="active"><a href="#;">Lorem Ipsum Dolor sit</a></li>
+                    <li><a href="#;">Lorem Ipsum Dolor sit</a></li>
+                </ul> 
+                <div class="selectMenu selectBox">
+                    <div class="box">Lorem Ipsum Dolor sit</div>
+                </div>
+            </nav>
+             <div class="codeHtml">
+            <pre class="brush: js;">
+                <nav class="menu-contextual">
+                    <ul class="nav nav-tabs">
+                        <li><a href="#;">Lorem Ipsum Dolor sit</a></li>
+                        <li class="active"><a href="#;">Lorem Ipsum Dolor sit</a></li>
+                        <li><a href="#;">Lorem Ipsum Dolor sit</a></li>
+                    </ul> 
+                    <div class="selectMenu selectBox">
+                        <div class="box">Lorem Ipsum Dolor sit</div>
+                    </div>
+                </nav>
+            </pre>
+            </div>
+        </section>
+
+        <section id="checkbox">
+            <h3>Checkbox - Radio button</h3>
+
+            <input type="radio"/><label>Radio Button</label>
+            <br />
+            <input type="checkbox"/><label>Checkbox</label>
+
+            <pre class="brush: js;">
+                <input type="radio"/><label>Radio Button</label>
+                <br />
+                <input type="checkbox"/><label>Checkbox</label>
+            </pre>
+        </section>
+
+        <section id="dropdown">
+            <h3>Dropdown</h3>
+            <div class="selectBox ">
+                <div class="box">LOREMP IPSUM DOLOR SIT</div>
+                <select onchange="this.parentNode.getElementsByTagName('div')[0].innerHTML = this.options[this.selectedIndex].text">
+                    <option>Lorem Ipsum Dolor sit</option>
+                    <option>Lorem Ipsum Dolor sit</option>
+                    <option>Lorem Ipsum Dolor sit</option>
+                    <option>Lorem Ipsum Dolor sit</option>
+                </select>
+            </div>
+             <div class="codeHtml">
+            <pre class="brush: js;">
+                 <div class="selectBox">
+                    <div class="box">LOREMP IPSUM DOLOR SIT</div>
+                        <select onchange="this.parentNode.getElementsByTagName('div')[0].innerHTML = this.options[this.selectedIndex].text">
+                            <option>Lorem Ipsum Dolor sit</option>
+                            <option>Lorem Ipsum Dolor sit</option>
+                            <option>Lorem Ipsum Dolor sit</option>
+                            <option>Lorem Ipsum Dolor sit</option>
+                        </select>
+                    </div>
+            </pre>
+            </div>
+        </section>
+
+        <section id="tablas" class="margin-tb">
+            <h2>
+                Tablas
+            </h2>
+            <h3>Tablas de Presentacion</h3>
+            <table class="table tabla-detalle-cliente">
+                <thead>
+                <th class="fullWidth">
+                    AUGUSTO ROBERTO BASTIDAS COLLAO
+                </th>
+                <th>
+                    Cuenta Vista: 0-000-03-92974-4
+                </th>
+                </thead>
+                <tr>
+                    <td>
+                    </td>
+                    <td>
+                        <table class="t-small f-right">
+                            <tr>
+                                <td class="pad-left">
+                                    Desde 02/01/2014
+                                </td>
+                                <td class="pad-left">
+                                    Hasta 02/02/2014
+                                </td>
+                            </tr>
+                        </table>
+                    </td>  
+                </tr>
+            </table>
+
+            <h3>Tabla Resumen</h3>
+
+            <table class="table table-responsive tabla-resumen">
+                <thead>
+                    <tr>
+                        <th>Monto Autorizado ($)</th>
+                        <th>Monto Utilizado ($)</th>
+                        <th>Monto Disponible ($)</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td><b class="labelTable">Monto Autorizado ($)</b>500.000</td>
+                    <td><b class="labelTable">Monto Utilizado ($)</b>100.000</td>
+                    <td><b class="labelTable">Monto Disponible ($)</b>400.000</td>
+                </tr>
+
+            </table>
+            <div class="codeHtml">
+            <pre class="brush: js;">
+                <table class="table table-responsive tabla-resumen">
+                    <thead>
+                        <tr>
+                            <th>Monto Autorizado ($)</th>
+                            <th>Monto Utilizado ($)</th>
+                            <th>Monto Disponible ($)</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td><b class="labelTable">Saldo Contable($)</b>500.000</td>
+                        <td><b class="labelTable">Saldo Disponible($)</b>100.000</td>
+                        <td><b class="labelTable">Saldo Disponible($)</b>400.000</td>
+                    </tr>
+                </table>
+            </pre>
+            </div>
+
+            <h3>Tabla de Datos</h3>
+
+            <table class="table table-responsive table-hover table-striped">
+                <thead>
+                    <tr>
+                        <th>
+                            Fecha
+                        </th>
+                        <th>
+                            Cargos($)
+                        </th>
+                        <th>
+                            Abonos($)
+                        </th>
+                        <th>
+                            Descripción
+                        </th>
+                        <th>
+                            Saldo Diario
+                        </th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>
+                        <b class="labelTable">Fecha</b>21/10/2014
+                    </td>
+                    <td>
+                        <b class="labelTable">Cargos($)</b>
+                    </td>
+                    <td>
+                        <b class="labelTable">Abonos($) </b>1.440.000
+                    </td>
+                    <td>
+                        <b class="labelTable">Descripción </b>Traspaso Internet Cta Cte
+                    </td>
+                    <td>
+                        <b class="labelTable">Saldo Diario </b>1.440.000
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b class="labelTable">Fecha</b>21/10/2014
+                    </td>
+                    <td>
+                        <b class="labelTable">Cargos($)</b>100.000
+                    </td>
+                    <td>
+                        <b class="labelTable">Abonos($) </b>
+                    </td>
+                    <td>
+                        <b class="labelTable">Descripción </b>Traspaso Internet Cta Cte
+                    </td>
+                    <td>
+                        <b class="labelTable">Saldo Diario </b>1.340.000
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b class="labelTable">Fecha</b>21/10/2014
+                    </td>
+                    <td>
+                        <b class="labelTable">Cargos($)</b>100.000
+                    </td>
+                    <td>
+                        <b class="labelTable">Abonos($) </b>
+                    </td>
+                    <td>
+                        <b class="labelTable">Descripción </b>Traspaso Internet Cta Cte
+                    </td>
+                    <td>
+                        <b class="labelTable">Saldo Diario </b>1.240.000
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b class="labelTable">Fecha</b>21/10/2014
+                    </td>
+                    <td>
+                        <b class="labelTable">Cargos($)</b>100.000
+                    </td>
+                    <td>
+                        <b class="labelTable">Abonos($)</b>
+                    </td>
+                    <td>
+                        <b class="labelTable">Descripción </b>Traspaso Internet Cta Cte
+                    </td>
+                    <td>
+                        <b class="labelTable">Saldo Diario </b>1.140.000
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b class="labelTable">Fecha</b>21/10/2014
+                    </td>
+                    <td>
+                        <b class="labelTable">Cargos($)</b>100.000
+                    </td>
+                    <td>
+                        <b class="labelTable">Abonos($) </b>
+                    </td>
+                    <td>
+                        <b class="labelTable">Descripción </b>Traspaso Internet Cta Cte
+                    </td>
+                    <td>
+                        <b class="labelTable">Saldo Diario </b>1.140.000
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b class="labelTable">Fecha</b>21/10/2014
+                    </td>
+                    <td>
+                        <b class="labelTable">Cargos($)</b>100.000
+                    </td>
+                    <td>
+                        <b class="labelTable">Abonos($)</b>
+                    </td>
+                    <td>
+                        <b class="labelTable">Descripción</b>Traspaso Internet Cta Cte
+                    </td>
+                    <td>
+                        <b class="labelTable">Saldo Diario</b>1.140.000
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b class="labelTable">Fecha</b>21/10/2014
+                    </td>
+                    <td>
+                        <b class="labelTable">Cargos($)</b>100.000
+                    </td>
+                    <td>
+                        <b class="labelTable">Abonos($) </b>
+                    </td>
+                    <td>
+                        <b class="labelTable">Descripción </b>Traspaso Internet Cta Cte
+                    </td>
+                    <td>
+                        <b class="labelTable">Saldo Diario </b>1.140.000
+                    </td>
+                </tr>
+            </table>
+
+            <h3>Tabla de Selección de filas</h3>
+
+            <table class="table table-responsive table-hover table-striped">
+                <thead>
+                    <tr>
+                        <th width="3%">
+
+                        </th>
+                        <th>
+                            Fecha
+                        </th>
+                        <th>
+                            Cargos($)
+                        </th>
+                        <th>
+                            Abonos($)
+                        </th>
+                        <th>
+                            Descripción
+                        </th>
+                        <th>
+                            Saldo Diario
+                        </th>
+                    </tr>
+                </thead>
+                <tr class="opcion-tabla">
+                    <td><input type="radio" name="cuenta"/></td>
+                    <td>
+                        <b class="labelTable">Fecha</b><span>21/10/2014</span>
+                    </td>
+                    <td>
+                        <b class="labelTable">Cargos($)</b>
+                    </td>
+                    <td>
+                        <b class="labelTable">Abonos($) </b>1.440.000
+                    </td>
+                    <td>
+                        <b class="labelTable">Descripción </b>Traspaso Internet Cta Cte
+                    </td>
+                    <td>
+                        <b class="labelTable">Saldo Diario </b>1.440.000
+                    </td>
+                </tr>
+                <tr class="opcion-tabla">
+                    <td><input type="radio" name="cuenta"/></td>
+                    <td>
+                        <b class="labelTable">Fecha</b><span>21/10/2014</span>
+                    </td>
+                    <td>
+                        <b class="labelTable">Cargos($)</b>
+                    </td>
+                    <td>
+                        <b class="labelTable">Abonos($) </b>1.440.000
+                    </td>
+                    <td>
+                        <b class="labelTable">Descripción </b>Traspaso Internet Cta Cte
+                    </td>
+                    <td>
+                        <b class="labelTable">Saldo Diario </b>1.440.000
+                    </td>
+                </tr>
+                <tr class="opcion-tabla">
+                    <td><input type="radio" name="cuenta"/></td>
+                    <td>
+                        <b class="labelTable">Fecha</b><span>21/10/2014</span>
+                    </td>
+                    <td>
+                        <b class="labelTable">Cargos($)</b>
+                    </td>
+                    <td>
+                        <b class="labelTable">Abonos($) </b>1.440.000
+                    </td>
+                    <td>
+                        <b class="labelTable">Descripción </b>Traspaso Internet Cta Cte
+                    </td>
+                    <td>
+                        <b class="labelTable">Saldo Diario </b>1.440.000
+                    </td>
+                </tr>
+                <tr class="opcion-tabla">
+                    <td><input type="radio" name="cuenta"/></td>
+                    <td>
+                        <b class="labelTable">Fecha</b><span>21/10/2014</span>
+                    </td>
+                    <td>
+                        <b class="labelTable">Cargos($)</b>
+                    </td>
+                    <td>
+                        <b class="labelTable">Abonos($) </b>1.440.000
+                    </td>
+                    <td>
+                        <b class="labelTable">Descripción </b>Traspaso Internet Cta Cte
+                    </td>
+                    <td>
+                        <b class="labelTable">Saldo Diario </b>1.440.000
+                    </td>
+                </tr>
+                <tr class="opcion-tabla">
+                    <td><input type="radio" name="cuenta"/></td>
+                    <td>
+                        <b class="labelTable">Fecha</b><span>21/10/2014</span>
+                    </td>
+                    <td>
+                        <b class="labelTable">Cargos($)</b>
+                    </td>
+                    <td>
+                        <b class="labelTable">Abonos($) </b>1.440.000
+                    </td>
+                    <td>
+                        <b class="labelTable">Descripción </b>Traspaso Internet Cta Cte
+                    </td>
+                    <td>
+                        <b class="labelTable">Saldo Diario </b>1.440.000
+                    </td>
+                </tr>
+
+            </table>
+
+            <h3>Selección Multiple de Filas</h3>
+            <table class="table table-responsive table-hover table-striped">
+                <thead>
+                    <tr>
+                        <th width="3%">
+
+                        </th>
+                        <th>
+                            Fecha
+                        </th>
+                        <th>
+                            Cargos($)
+                        </th>
+                        <th>
+                            Abonos($)
+                        </th>
+                        <th>
+                            Descripción
+                        </th>
+                        <th>
+                            Saldo Diario
+                        </th>
+                    </tr>
+                </thead>
+                <tr class="opcion-tabla">
+                    <td><input type="checkbox" name="cuenta"/></td>
+                    <td>
+                        <b class="labelTable">Fecha</b><span>21/10/2014</span>
+                    </td>
+                    <td>
+                        <b class="labelTable">Cargos($)</b>
+                    </td>
+                    <td>
+                        <b class="labelTable">Abonos($) </b>1.440.000
+                    </td>
+                    <td>
+                        <b class="labelTable">Descripción </b>Traspaso Internet Cta Cte
+                    </td>
+                    <td>
+                        <b class="labelTable">Saldo Diario </b>1.440.000
+                    </td>
+                </tr>
+                <tr class="opcion-tabla">
+                    <td><input type="checkbox" name="cuenta"/></td>
+                    <td>
+                        <b class="labelTable">Fecha</b><span>21/10/2014</span>
+                    </td>
+                    <td>
+                        <b class="labelTable">Cargos($)</b>
+                    </td>
+                    <td>
+                        <b class="labelTable">Abonos($) </b>1.440.000
+                    </td>
+                    <td>
+                        <b class="labelTable">Descripción </b>Traspaso Internet Cta Cte
+                    </td>
+                    <td>
+                        <b class="labelTable">Saldo Diario </b>1.440.000
+                    </td>
+                </tr>
+                <tr class="opcion-tabla">
+                    <td><input type="checkbox" name="cuenta"/></td>
+                    <td>
+                        <b class="labelTable">Fecha</b><span>21/10/2014</span>
+                    </td>
+                    <td>
+                        <b class="labelTable">Cargos($)</b>
+                    </td>
+                    <td>
+                        <b class="labelTable">Abonos($) </b>1.440.000
+                    </td>
+                    <td>
+                        <b class="labelTable">Descripción </b>Traspaso Internet Cta Cte
+                    </td>
+                    <td>
+                        <b class="labelTable">Saldo Diario </b>1.440.000
+                    </td>
+                </tr>
+                <tr class="opcion-tabla">
+                    <td><input type="checkbox" name="cuenta"/></td>
+                    <td>
+                        <b class="labelTable">Fecha</b><span>21/10/2014</span>
+                    </td>
+                    <td>
+                        <b class="labelTable">Cargos($)</b>
+                    </td>
+                    <td>
+                        <b class="labelTable">Abonos($) </b>1.440.000
+                    </td>
+                    <td>
+                        <b class="labelTable">Descripción </b>Traspaso Internet Cta Cte
+                    </td>
+                    <td>
+                        <b class="labelTable">Saldo Diario </b>1.440.000
+                    </td>
+                </tr>
+                <tr class="opcion-tabla">
+                    <td><input type="checkbox" name="cuenta"/></td>
+                    <td>
+                        <b class="labelTable">Fecha</b><span>21/10/2014</span>
+                    </td>
+                    <td>
+                        <b class="labelTable">Cargos($)</b>
+                    </td>
+                    <td>
+                        <b class="labelTable">Abonos($) </b>1.440.000
+                    </td>
+                    <td>
+                        <b class="labelTable">Descripción </b>Traspaso Internet Cta Cte
+                    </td>
+                    <td>
+                        <b class="labelTable">Saldo Diario </b>1.440.000
+                    </td>
+                </tr>
+
+            </table>
+
+
+        </section>
+        <section id="paginador" class="margin-tb">
+            <h3>Paginador</h3>
+            <footer class="table-paginador">
+                <ul class="utilidad hide-on-phones">
+                    <li><a href="#"><i class="icon-small"></i>Descargar PDF</a></li>
+                    <li><a href="#"><i class="icon-small"></i>Descargar Excel</a></li>
+                    <li><a href="#"><i class="icon-small"></i>Enviar por e-mail</a></li>
+                </ul>
+                <ul class="paginador f-right">
+                    <li class="f-left"><a href="#"><i class="icon-small anterior"></i><span>Anterior</span></a></li>
+                    <li class="f-left"><a href="#"><span>Siguiente</span><i class="icon-small f-right siguiente"></i></a></li>
+                </ul>
+            </footer>
+        </section>
+    </div>
+</div>
+
+
+<!-- @include _footer -->

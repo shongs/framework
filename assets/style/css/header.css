@@ -1,0 +1,100 @@
+/*COLORES*/
+/*============== MIXING ==============*/
+/*============= Margenes ==================*/
+.margin-tb {
+  margin: 10px 0 !important;
+}
+.margen-left {
+  margin-left: 10px;
+}
+.margen-left2 {
+  margin-left: 20px;
+}
+.margen-right {
+  margin-right: 10px;
+}
+.margen-right2 {
+  margin-right: 20px;
+}
+/*============= PADDING ================*/
+.pad-all {
+  padding: 20px;
+}
+.pad-sides {
+  padding: 0 20px;
+}
+.pad-tb {
+  padding: 20px 0;
+}
+.pad-left {
+  padding: 0 0 0 20px;
+}
+.main-head {
+  background: #f7f7f7;
+  width: 100%;
+}
+.menu-ripley {
+  background: #e8e8ea;
+}
+.menu-ripley li {
+  font-weight: regular;
+  font-size: 14px;
+  float: left;
+}
+.menu-ripley a {
+  padding: 10px 20px;
+  display: block;
+}
+.menu-ripley a.active,
+.menu-ripley a.active:hover {
+  background: #f7f7f7;
+}
+.menu-ripley a:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+.info-cliente {
+  float: right !important;
+  text-align: right;
+  margin: 20px 0;
+  font-size: 14px;
+  line-height: 130%;
+}
+.logo {
+  float: left;
+  margin: 20px 0 0;
+}
+.accesos-cuenta {
+  float: right;
+  font-size: 12px;
+  margin-top: 10px;
+}
+.accesos-cuenta li {
+  float: left;
+}
+.accesos-cuenta li:first-child {
+  border-right: 1px solid #666666;
+  margin-right: 10px;
+  padding-right: 10px;
+}
+.accesos-cuenta li:last-child {
+  border-left: 1px solid #666666;
+  margin-left: 10px;
+  padding-left: 10px;
+}
+@media only screen and (max-width: 640px) {
+  .info-cliente {
+    text-align: left;
+    margin-top: 10px;
+  }
+  .accesos-cuenta {
+    display: table;
+    font-size: 12px;
+    margin: 10px auto 0;
+    float: none;
+  }
+  .btn {
+    width: 100%;
+    margin-bottom: 10px !important;
+    float: ;
+  }
+}

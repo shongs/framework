@@ -1,0 +1,89 @@
+@import url("variables.less");
+
+
+.main-head{
+	background: @color-gl;
+	width: 100%;
+}
+
+.menu-ripley{
+	background:@color-gm; 
+}
+
+.menu-ripley li{
+	font-weight: regular;
+	font-size: 14px;
+	float: left;
+}
+
+.menu-ripley a{
+	padding: 10px 20px;
+	display: block;
+}
+
+.menu-ripley a.active, .menu-ripley a.active:hover{
+	background: @color-gl;
+}
+
+.menu-ripley a:hover{
+    background: rgba(255,255,255,0.4)
+}
+
+.info-cliente{
+	float: right !important;
+	text-align: right;
+	margin: 20px 0;
+	font-size: 14px;
+	line-height: 130%;
+}
+
+.logo{
+	float: left;
+	margin: 20px 0 0;
+}
+
+.accesos-cuenta{
+	float: right;
+	font-size: 12px;
+	margin-top: 10px;
+}
+
+.accesos-cuenta li{
+	float: left;
+	
+}
+
+.accesos-cuenta li:first-child{
+	border-right: 1px solid @color-gd;
+	margin-right: 10px;
+	padding-right: 10px;
+}
+
+.accesos-cuenta li:last-child{
+	border-left: 1px solid @color-gd;
+	margin-left: 10px;
+	padding-left: 10px;
+}
+
+@media only screen
+and (max-width : 640px) {
+ 
+.info-cliente{
+	text-align: left;
+	margin-top: 10px;
+}
+
+.accesos-cuenta {
+    display: table;
+    font-size: 12px;
+    margin: 10px auto 0;
+    float: none;
+}
+
+.btn{
+	width: 100%;
+	margin-bottom: 10px !important;
+	float: ;
+}
+ 
+}

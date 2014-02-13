@@ -1,0 +1,162 @@
+/*COLORES*/
+/*============== MIXING ==============*/
+/*============= Margenes ==================*/
+.margin-tb {
+  margin: 10px 0 !important;
+}
+.margen-left {
+  margin-left: 10px;
+}
+.margen-left2 {
+  margin-left: 20px;
+}
+.margen-right {
+  margin-right: 10px;
+}
+.margen-right2 {
+  margin-right: 20px;
+}
+/*============= PADDING ================*/
+.pad-all {
+  padding: 20px;
+}
+.pad-sides {
+  padding: 0 20px;
+}
+.pad-tb {
+  padding: 20px 0;
+}
+.pad-left {
+  padding: 0 0 0 20px;
+}
+/*******************************************************************************
+Grilla *************************************************************************
+*******************************************************************************/
+.row {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+}
+.row:after {
+  clear: both;
+}
+.row {
+  *zoom: 1;
+}
+.row [class*="column"] {
+  display: block;
+  float: left;
+  margin-right: 1.754%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -msbox-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.row [class*="column"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.column1 {
+  width: 6.7255%;
+}
+.column2 {
+  width: 15.205%;
+}
+.column3 {
+  width: 23.6845%;
+}
+.column4 {
+  width: 32.164%;
+}
+.column5 {
+  width: 40.6435%;
+}
+.column6 {
+  width: 49.123%;
+}
+.column7 {
+  width: 57.6025%;
+}
+.column8 {
+  width: 66.082%;
+}
+.column9 {
+  width: 74.5615%;
+}
+.column10 {
+  width: 83.041%;
+}
+.column11 {
+  width: 91.5205%;
+}
+.column12 {
+  width: 100%;
+  float: none;
+}
+[class*="column"].last {
+  margin-right: 0px !important;
+}
+/*******************************************************************************
+Tablets general ****************************************************************
+*******************************************************************************/
+@media only screen and (max-width: 1239px) and (min-width: 1024px) {
+  .row {
+    padding: 0 20px;
+  }
+}
+/*******************************************************************************
+Tablets general ****************************************************************
+*******************************************************************************/
+@media only screen and (max-width: 1025px) and (min-width: 641px) {
+  .hide-on-phones {
+    display: block;
+  }
+}
+/*******************************************************************************
+Tablets Vertical ***************************************************************
+*******************************************************************************/
+@media only screen and (max-width: 800px) and (min-width: 641px) {
+  .hide-on-phones {
+    display: block;
+  }
+}
+/*******************************************************************************
+Smartphones ********************************************************************
+*******************************************************************************/
+@media only screen and (max-width: 640px) {
+  .row [class*="column"] {
+    width: 100%;
+  }
+  .hide-on-phones {
+    display: none;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .hide-on-phones {
+    display: none;
+  }
+}
+/*******************************************************************************
+All ********************************************************************
+*******************************************************************************/
+@media only screen and (max-width: 1024px) {
+  .row {
+    padding: 0 20px;
+  }
+}
+/*******************************************************************************
+Retina *************************************************************************
+*******************************************************************************/
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  
+}

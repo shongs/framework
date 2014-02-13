@@ -1,0 +1,102 @@
+/*COLORES*/
+
+@color-p:#662869;
+@color-pd:#4C1E50;
+@color-gd:#666666;
+@color-gm:#E8E8EA;
+@color-gl:#F7F7F7;
+
+@separacion: 10px;
+
+/*============== MIXING ==============*/
+.rounded-corners (@radius: 5px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  -ms-border-radius: @radius;
+  -o-border-radius: @radius;
+  border-radius: @radius;
+}
+
+.bordered () {
+	border: 1px solid @color-t;
+}
+
+.opacity(@opacity: 0.8) {
+  -moz-opacity: @opacity;
+  -khtml-opacity: @opacity;
+  -webkit-opacity: @opacity;
+  opacity: @opacity;
+  @opperc: @opacity * 100;
+  -ms-filter: ~"progid:DXImageTransform.Microsoft.Alpha(opacity=@{opperc})";
+  filter: ~"alpha(opacity=@{opperc})";
+}
+
+.transition-duration(@duration: 0.3s) {
+  -moz-transition-duration: @duration;
+  -webkit-transition-duration: @duration;
+  -o-transition-duration: @duration;
+  transition-duration: @duration;
+}
+
+.box-sizing(){
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
+.box-shadow (@x: 2px; @y: 2px; @blur: 3px; @color: #333) {
+  -moz-box-shadow: @arguments;
+  -webkit-box-shadow: @arguments;
+  box-shadow: @arguments;
+}
+
+/*============= Margenes ==================*/
+.margen-all(@margen:20px){
+  margin:@margen;
+}
+
+.margen-sides(@margen:20px){
+  margin: 0 @margen;
+}
+
+.margin-tb{
+  margin: 10px 0 !important;
+}
+
+.margen-left{
+  margin-left: 10px
+}
+
+.margen-left2{
+  margin-left: 20px;
+}
+
+.margen-right{
+  margin-right: 10px;
+}
+
+.margen-right2{
+  margin-right: 20px;
+}
+
+/*============= PADDING ================*/
+.pad-all{
+	padding:20px;
+}
+
+.pad-sides{
+	padding: 0 20px;
+}
+
+.pad-tb{
+	padding: 20px 0;
+}
+
+.pad-left{
+  padding: 0 0 0 20px;
+}
+
+
+
+
+

@@ -1,0 +1,297 @@
+/*COLORES*/
+/*============== MIXING ==============*/
+/*============= Margenes ==================*/
+.margin-tb {
+  margin: 10px 0 !important;
+}
+.margen-left {
+  margin-left: 10px;
+}
+.margen-left2 {
+  margin-left: 20px;
+}
+.margen-right {
+  margin-right: 10px;
+}
+.margen-right2 {
+  margin-right: 20px;
+}
+/*============= PADDING ================*/
+.pad-all {
+  padding: 20px;
+}
+.pad-sides {
+  padding: 0 20px;
+}
+.pad-tb {
+  padding: 20px 0;
+}
+.pad-left {
+  padding: 0 0 0 20px;
+}
+.ui-loader {
+  display: none;
+}
+.table {
+  margin-bottom: 20px;
+}
+/*TABLAS ESPECIFICICAS*/
+.tabla-detalle-cliente {
+  margin-bottom: 10px;
+}
+.tabla-detalle-cliente thead tr th {
+  background: #662869;
+  color: #fff;
+  text-align: right;
+}
+.tabla-detalle-cliente thead tr th:first-child {
+  background: #e8e8ea;
+  width: 70%;
+  text-align: left;
+  color: #666666;
+}
+.tabla-resumen {
+  margin-bottom: 10px;
+}
+.tabla-resumen th,
+.tabla-resumen td {
+  text-align: center;
+}
+.tabla-detalle-transaccion {
+  margin-bottom: 10px;
+}
+.tabla-detalle-transaccion > tbody > tr > td {
+  padding: 0;
+}
+.tabla-detalle-transaccion > thead {
+  background: #f7f7f7;
+  color: #662869;
+}
+.tabla-detalle-transaccion > thead > tr > th {
+  text-align: center;
+}
+.table-nested {
+  margin-bottom: 0 !important;
+}
+.table-nested thead tr th {
+  background: #e8e8ea;
+  text-align: center;
+}
+.table-nested tr td:first-child {
+  background: #f7f7f7;
+}
+.resumen_saldos td,
+.resumen_saldos tr {
+  border-bottom: 0 none !important;
+}
+.resumen_saldos td {
+  background: #e8e8ea;
+}
+.table > thead > tr > th {
+  background: #e8e8ea;
+}
+.tabla-detalle-cliente thead tr th {
+  background: none repeat scroll 0 0 #662869;
+  color: #FFFFFF;
+  text-align: right;
+}
+.table-inside {
+  border: 0 none;
+  margin: 0;
+}
+.table-striped > thead {
+  border-bottom: 2px solid #CCCCCC;
+}
+.table.table-inside td {
+  border: 0 none;
+}
+.table thead tr {
+  border-bottom: 2px solid #CCCCCC;
+}
+.table-paginador {
+  width: 100%;
+  background: #e8e8ea;
+  padding: 5px;
+  float: left;
+}
+.utilidad {
+  float: left;
+  margin: 0;
+}
+.utilidad li {
+  float: left;
+  font-size: 12px;
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+.utilidad li:last-child {
+  border: 0 none;
+}
+.paginador {
+  font-size: 12px;
+  margin: 0;
+}
+.paginador li {
+  padding: 0 10px;
+}
+/********************fin de tablas especificas*******************/
+@media only all {
+  th.ui-table-priority-6,
+  td.ui-table-priority-6,
+  th.ui-table-priority-5,
+  td.ui-table-priority-5,
+  th.ui-table-priority-4,
+  td.ui-table-priority-4,
+  th.ui-table-priority-3,
+  td.ui-table-priority-3,
+  th.ui-table-priority-2,
+  td.ui-table-priority-2,
+  th.ui-table-priority-1,
+  td.ui-table-priority-1 {
+    display: none;
+  }
+}
+@media screen and (min-width: 20em) {
+  .ui-table-columntoggle.ui-responsive th.ui-table-priority-1,
+  .ui-table-columntoggle.ui-responsive td.ui-table-priority-1 {
+    display: table-cell;
+  }
+}
+@media screen and (min-width: 30em) {
+  .ui-table-columntoggle.ui-responsive th.ui-table-priority-2,
+  .ui-table-columntoggle.ui-responsive td.ui-table-priority-2 {
+    display: table-cell;
+  }
+}
+@media screen and (min-width: 40em) {
+  .ui-table-columntoggle.ui-responsive th.ui-table-priority-3,
+  .ui-table-columntoggle.ui-responsive td.ui-table-priority-3 {
+    display: table-cell;
+  }
+}
+@media screen and (min-width: 50em) {
+  .ui-table-columntoggle.ui-responsive th.ui-table-priority-4,
+  .ui-table-columntoggle.ui-responsive td.ui-table-priority-4 {
+    display: table-cell;
+  }
+}
+@media screen and (min-width: 60em) {
+  .ui-table-columntoggle.ui-responsive th.ui-table-priority-5,
+  .ui-table-columntoggle.ui-responsive td.ui-table-priority-5 {
+    display: table-cell;
+  }
+}
+@media screen and (min-width: 70em) {
+  .ui-table-columntoggle.ui-responsive th.ui-table-priority-6,
+  .ui-table-columntoggle.ui-responsive td.ui-table-priority-6 {
+    display: table-cell;
+  }
+}
+.ui-table-columntoggle th.ui-table-cell-hidden,
+.ui-table-columntoggle td.ui-table-cell-hidden,
+.ui-table-columntoggle.ui-responsive th.ui-table-cell-hidden,
+.ui-table-columntoggle.ui-responsive td.ui-table-cell-hidden {
+  display: none;
+}
+.ui-table-columntoggle th.ui-table-cell-visible,
+.ui-table-columntoggle td.ui-table-cell-visible,
+.ui-table-columntoggle.ui-responsive th.ui-table-cell-visible,
+.ui-table-columntoggle.ui-responsive td.ui-table-cell-visible {
+  display: table-cell;
+}
+.ui-table-reflow td .ui-table-cell-label,
+.ui-table-reflow th .ui-table-cell-label {
+  display: none;
+}
+@media only all {
+  .ui-table-reflow thead td,
+  .ui-table-reflow thead th {
+    display: none;
+  }
+  .ui-table-reflow td,
+  .ui-table-reflow th {
+    text-align: left;
+    display: block;
+  }
+  .ui-table-reflow tbody th {
+    margin-top: 3em;
+  }
+  .labelTable {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: normal;
+    margin: -0.4em 1em -0.4em -0.4em;
+    padding: 0.4em;
+    width: 40%;
+    float: left;
+  }
+}
+@media (max-width: 648px) {
+  .table-responsive td,
+  .table-responsive th {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    clear: left;
+  }
+  .table-responsive .text-right {
+    text-align: left;
+  }
+  .tabla-detalle-cliente,
+  .tabla-detalle-cliente thead {
+    display: block;
+  }
+  .tabla-detalle-cliente thead tr {
+    display: block;
+    width: 100%;
+  }
+  .tabla-detalle-cliente thead tr th {
+    display: block;
+    float: left;
+    width: 100% !important;
+    text-align: center !important;
+  }
+  .opcion-tabla {
+    display: block;
+    padding: 0 0 0 30px;
+    position: relative;
+    overflow: hidden;
+  }
+  .opcion-tabla td:first-child {
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    width: 30px;
+  }
+  .table-responsive span {
+    display: block;
+    float: left;
+    width: 57%;
+  }
+}
+@media (min-width: 648px) {
+  /* Show the table header rows and set all cells to display: table-cell */
+  .table td,
+  .table th,
+  .table tbody th,
+  .table tbody td,
+  .table thead td,
+  .table thead th {
+    display: table-cell;
+    margin: 0;
+  }
+  /* Hide the labels in each cell */
+  .table td .labelTable,
+  .table th .labelTable {
+    display: none;
+  }
+}
+@media (max-width: 748px) {
+  .tabla-resumen td {
+    text-align: left;
+  }
+}

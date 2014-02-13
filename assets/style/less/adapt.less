@@ -1,0 +1,260 @@
+@import url("variables.less");
+
+.input-group{
+    min-width: 200px;
+    width: 100%;
+    max-width: 300px;
+}
+.navbar-toggle{
+    margin: 0;
+}
+
+
+.navbar-brand{
+    display: none;
+}
+.navbar-toggle .icon-bar {
+    background: none repeat scroll 0 0 #fff;
+    display: block;
+    height: 4px;
+    width: 22px;
+    margin: 0;
+    border-radius: 0;
+}
+
+.menu-contextual .selectMenu{
+    display: none;
+    max-width:100%;
+}
+
+.menuLateral .navbar-toggle{
+    border-radius: 0;
+    margin: 10px 20px 10px -20px;
+    min-width: 10px;
+    padding: 10px;
+}
+.menu-contextual{
+    margin: 10px 0 0 0;
+}
+
+.menu-aux {
+    border-top: 1px solid rgba(0, 0, 0, 0.03);
+    float: left;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    width: 100%;
+}
+
+.menu-aux li{
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+
+#sidebar .menu-aux{
+    display: none;
+}
+
+.mobile{
+    display:none;
+}
+
+
+
+/*******************************************************************************
+All mobile general ****************************************************************
+*******************************************************************************/
+
+@media only screen
+and (max-width : 1025px){
+   
+    
+}
+
+/*******************************************************************************
+Tablets general ****************************************************************
+*******************************************************************************/
+@media only screen
+and (max-width : 1025px)
+and (min-width : 641px){
+    .hide-on-mobile { display: none !important; }
+    .hide-on-phones { display: block ; }
+    .hide-on-tablets { display: none !important; }
+    .hide-on-desktop{display:block !important;}
+    .only-on-mobile { display: block ; }
+    .only-on-h-phones{ display: none !important; }
+    .only-on-tablets { display: block ; }
+    .only-on-desktops { display: none !important; }
+    .only-on-phones { display:none !important; }
+    
+ 
+}
+
+/*******************************************************************************
+Tablets Horizontal ***************************************************************
+*******************************************************************************/
+@media only screen
+and (max-width : 1025px)
+and (min-width : 801px) {
+    .hide-on-h-tablets {display:none !important;}
+    .hidde-on-vertical-tablets{display:none !important;}
+    .hide-only-vertical-tablets{display:none !important;}
+    .only-on-phones { display:none }
+}
+
+
+/*TABLET DOWN*/
+
+@media only screen
+and (max-width : 768px){
+/*MENU TOP*/
+
+.mobile{
+    display:block !important;
+}
+
+.fullWidth{
+    width: 100%;
+    padding: 0;
+}
+.column3.menuLateral{
+    width: 100%;
+    padding:0;
+}
+    
+    .menu-contextual ul{
+        display: none;
+    }
+
+    .contenedor{
+        border: 1px solid #DDDDDD;
+    }
+
+    .menu-contextual{
+        margin: 10px 0 20px;
+    }
+
+    .menu-contextual .selectMenu{
+    display: block;
+
+    }
+    .navbar-brand{
+    display: block !important;
+  }
+
+    .navbar-header{
+    float: none;
+   
+  }
+
+  .menu-ripley{
+    background: #1C1C1B;
+    color: #fff;
+  }
+
+  .menu-ripley ul{
+    width: 100%;
+    float:left;
+
+  }
+ .menu-ripley li {
+    background: none repeat scroll 0 0 #DDDDDD;
+    border-bottom: 1px solid #FFFFFF;
+    float: none;
+}
+
+.menu-ripley a{
+    color: #fff;
+    text-transform: uppercase;
+}
+.menu-ripley a.active{
+    background: #1C1C1B;
+}
+
+.menu-ripley a:hover{
+    background: #1C1C1B !important;
+}
+  .menu-ripley .navbar-collapse{
+    padding: 0;
+  }
+
+#sidebar .menu-aux{
+    display: block;
+}
+.menu-aux{
+    display: none;
+
+}
+.menu-aux li {
+    display: block;
+    float: none;
+    text-align: left;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.menu-aux i{
+    float: left;
+}
+
+  
+}
+
+/*******************************************************************************
+Tablets Vertical ***************************************************************
+*******************************************************************************/
+
+@media only screen
+and (max-width : 800px)
+and (min-width : 641px) {
+    .hidde-on-vertical-tablets{display:none !important;}
+    .hide-only-vertical-tablets{display:none !important;}
+    .hide-on-h-tablets {display:block;}
+    .hide-on-v-tablets{display:none !important;}
+    .only-on-phones { display:none}
+}
+
+
+/*******************************************************************************
+Smartphones ********************************************************************
+*******************************************************************************/
+@media only screen
+and (max-width : 640px) {
+    .row [class*="column"].down {width: 100%;float: none;margin-right: 0px; overflow:hidden;}
+    .hide-on-mobile { display: none !important; }
+    .hide-on-phones { display: none !important; }
+    .hide-on-tablets { display: none !important; }
+    .only-on-phones { display: block !important  ; }
+    .only-on-tablets { display: none !important; }
+    .only-on-desktops { display: none !important; }
+    .only-on-mobile { display: block !important ; }
+    .hide-on-desktop{display:block !important;}
+    .hide-only-vertical-tablets{display:block;}
+    .table-responsive thead{display: none;}
+    .tabla-detalle-transaccion thead{display: block;text-align: center;}
+    .tabla-detalle-transaccion .table-nested thead tr {display: block;text-align: center;}
+    .tabla-detalle-transaccion tr {
+    display: block;
+}
+    
+    
+}
+
+/*******************************************************************************
+Smartphones Horizontal********************************************************************
+*******************************************************************************/
+@media only screen
+and (max-width : 640px)
+and (min-width : 480px){
+    .only-on-h-phones{display:block !important;}
+   
+}
+
+@media only screen
+and (max-width : 479px){
+    .only-on-h-phones{display:none !important;}
+
+}
+
+
