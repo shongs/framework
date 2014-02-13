@@ -35,7 +35,6 @@ section {
 .gridResponsive {
   margin-bottom: 20px;
   padding: 0;
-  height: 350px;
   overflow: hidden;
 }
 .gridResponsive [class*="column"] {
