@@ -301,7 +301,32 @@ estilos visuales más complejos.</p>
             </h2>
             <h3>Tablas de Presentacion</h3>
 
-            <table class="table tabla-detalle-cliente">
+            
+<dl>
+    <dt>1. Atributos:</dt>
+        <dd>
+        Las tablas de resumen son objetos  que presentan datos de contexto o de resumen de una consulta permitiendo que el usuario comprenda de mejor modo las tablas de datos que vienen a continuación o que permiten presentar las condiciones de los datos consultados. La tabla se adapta de forma líquida al contenedor.
+        </dd>
+        <dt>2. Usabilidad:</dt>
+            <dd>
+            Al presentar datos consolidados y no completamente ordenados  se debe destacar un elemento sobre otros con color  enfatizado. 
+            </dd>
+        <dt>3. Reglas y restricciones:</dt>  
+        <dd>
+        Se debe usar cuando es necesario presentar datos diversos para generar posición,contexto fechas de la consulta, etc. para otros  conjuntos de datos de forma . Es recomendable ubicarla en la parte superior de la sección de contenidos antes de las tablas de datos.
+        </dd>  
+</dl>
+        <h4>Vista Mobile</h4>
+        <p>En vista mobile los elementos dejan de estar flotando o posesionados generando columnas y actúan agrupados en una sola columna según los datos presentados.</p>
+
+
+
+
+
+
+
+
+<table class="table tabla-detalle-cliente">
     <thead>
     <th class="fullWidth">
         AUGUSTO ROBERTO BASTIDAS COLLAO
@@ -396,7 +421,27 @@ estilos visuales más complejos.</p>
 
             <h3>Tabla de Datos</h3>
 
-            <table class="table table-responsive table-hover table-striped">
+            <dl>
+    <dt>1. Atributos:</dt>
+        <dd>
+        Se trata del componente tabla más común de la plataforma. Se compone  de filas de datos organizadas en columnas y cabeceras de columnas que presentan el criterio de agrupación. 
+        </dd>
+        <dt>2. Usabilidad:</dt>
+            <dd>
+            Las tabla sde datos deben tener presente un contexto preciso de aparición pudiendo ser acompañada de un título de sección o tabla de presentación. destacada la cabecera
+            </dd>
+        <dt>3. Reglas y restricciones:</dt>  
+            <dd>
+                Se debe usar cada vexz que se necesiten presentar gran cantidad de datos provenientes de los servicios.
+                - El máximo de registros en una vista o  filas posible (antes de la paginación) son 12 filas.
+                - Las columnas visibles son hasta 8 en vista escritorio antes que los demás datos se escondan en un popover.
+
+            </dd>  
+</dl>
+        <h4>Vista Mobile</h4>
+        <p>En la vista mobile se produce un cambio de patrón de diseño  en donde cada una de las  filas de datos van acompañadas de  la cabecera. 
+            <br />La cantidad de registros posibles en esta vista son 3 (antes de la paginación)</p>
+<table class="table table-responsive table-hover table-striped">
     <thead>
         <tr>
             <th>
@@ -687,7 +732,22 @@ estilos visuales más complejos.</p>
 
             <h3>Tabla de Selección de filas</h3>
 
-            <table class="table table-responsive table-hover table-striped">
+            <dl>
+    <dt>1. Atributos:</dt>
+        <dd>
+            La selección de tablas operan mediante radio button sobre una fila de datos.
+
+        </dd>
+    <dt>2. Usabilidad:</dt>
+        <dd>
+            El elemento de selección radio button se ubica al lado izquierdo de la tabla en sentido de lectura.
+        </dd>
+    <dt>3. Reglas y restricciones:</dt>  
+        <dd>
+            Se utiliza cuando se requiera generar una acción excluyente sobre una fila de datos.
+        </dd>  
+</dl>
+<table class="table table-responsive table-hover table-striped">
     <thead>
         <tr>
             <th width="3%">
@@ -925,7 +985,21 @@ estilos visuales más complejos.</p>
 
             <h3>Selección Multiple de Filas</h3>
 
-            <table class="table table-responsive table-hover table-striped">
+            <dl>
+    <dt>1. Atributos:</dt>
+        <dd>
+        La selección de tablas operan mediante la selección con checkbox sobre una fila de datos.
+        </dd>
+        <dt>2. Usabilidad:</dt>
+            <dd>
+            El elemento de selección checkbox se ubica al lado izquierdo de la tabla en sentido de lectura.
+            </dd>
+        <dt>3. Reglas y restricciones:</dt>  
+        <dd>
+        Se utiliza cuando se requiera generar una acción múltiples sobre una cantidad de  fila de datos.
+        </dd>  
+</dl>
+<table class="table table-responsive table-hover table-striped">
     <thead>
         <tr>
             <th width="3%">
@@ -1161,7 +1235,24 @@ estilos visuales más complejos.</p>
 </div>
 
             <h3>Filtro y busqueda de registros</h3>
-              <div class="filtro-busqueda">
+            <dl>
+    <dt>1. Atributos:</dt>
+        <dd>
+        El filtro es un input que busca valores que están presenten en la capa del usuario
+        </dd>
+        <dt>2. Usabilidad:</dt>
+            <dd>
+            Las filas van desapareciendo e medida que el usuario genera la combinación de caracteres.
+            </dd>
+        <dt>3. Reglas y restricciones:</dt>  
+        <dd>
+        Sólo los valores con caracteres alfanuméricos son permitidos.
+        </dd>  
+</dl>
+        <h4>Vista Mobile</h4>
+        <p>Ante resultados de registros extensos es posible usar un componente en base a un input que filtre los datos a través de las filas.
+        El filtro se realiza a través de todas las columnas en valores de texto y numéricos.</p>
+  <div class="filtro-busqueda">
             <th colspan="6" class="text-right">
                 
                 <form method="post" action="">
@@ -1432,7 +1523,29 @@ estilos visuales más complejos.</p>
 
         </section>
 
-        <section id="paginador" class="margin-tb">
+        <dl>
+    <dt>1. Atributos:</dt>
+        <dd>
+            <p><strong>Paginador simple:</strong>  Se compone de un número de registros más los links “Siguiente” y “Anterior” que se activan cuando estos superan los 12 registros.</p> 
+            <strong><p>Paginador con numeración:</strong> Deja en evidencia el número de registros pidiendo a los servicios la contabilización del total de registros.</p> 
+        </dd>
+    <dt>2. Usabilidad:</dt>
+        <dd>
+            <p>Cuando una tabla genere más de doce registros se genera de forma automática un paginador permitiendo al usuario avanzar a página siguiente. </p>
+            <p>Cuando el usuario avance en la paginación se activará el link “Anterior”.<br />
+            Es importante consignar que los registros son cargados en su totalidad dependiendo del diseño del servicio.</p>
+
+        </dd>
+    <dt>3. Reglas y restricciones:</dt>  
+        <dd>
+            Se utiliza cuando los datos de los servicios superen una cantidad de datos que según el contexto del usuario no resulten útiles verlos en conjunto.
+        </dd>  
+</dl>
+
+        <h4>Vista Mobile - Dropdown</h4>
+        <p>En el caso de las vistas mobile los registros tabulados soportados antes del paginador son tres, luego de eso se activa con el mismo resultado.
+        </p>
+<section id="paginador" class="margin-tb">
     <h3>Paginador</h3>
     <footer class="table-paginador">
         <ul class="utilidad hide-on-phones">
