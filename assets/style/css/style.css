@@ -220,21 +220,21 @@ p {
   color: #fff;
 }
 .btn-se {
-  background: #848484;
-  color: #fff !important;
-  text-decoration: none !important;
-}
-.btn-se:hover {
-  background: #6B6B6B;
-  color: #fff;
-}
-.btn-en {
   background: #B7B7B7;
   color: #fff !important;
   text-decoration: none !important;
 }
-.btn-en:hover {
+.btn-se:hover {
   background: #A4A4A4;
+  color: #fff;
+}
+.btn-en {
+  background: #848484;
+  color: #fff !important;
+  text-decoration: none !important;
+}
+.btn-en:hover {
+  background: #6B6B6B;
   color: #fff;
 }
 /*MENU LATERAL*/
