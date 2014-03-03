@@ -11,7 +11,13 @@
         <link rel="stylesheet" type="text/css" media="all" href="assets/style/css/style.css" />
         <link rel="stylesheet" type="text/css" media="all" href="assets/style/css/icons.css" />
         <link rel="stylesheet" type="text/css" media="all" href="assets/style/css/adapt.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="assets/style/claro/claro.css" />
         <link rel="stylesheet" type="text/css" media="all" href="assets/style/css/framework.css" />
+
+
+         
+
+
 
         <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
@@ -25,7 +31,16 @@
         <link type="text/css" rel="stylesheet" href="assets/js/styles/shCoreDefault.css"/>
         <script type="text/javascript">SyntaxHighlighter.all();</script>
         
+
+
+           <script src="http://ajax.googleapis.com/ajax/libs/dojo/1.9.2/dojo/dojo.js"
+            data-dojo-config="async: true"></script>
+        <script src="assets/js/function-dojo.js"></script>
+
+
         <link rel="stylesheet" href="assets/style/css/table.css">
+    
+         <link rel="stylesheet" type="text/css" media="all" href="assets/style/css/dojo.css" />
         <title> Banco Ripley</title>
     </head>
     <body>
@@ -254,14 +269,14 @@ estilos visuales más complejos.</p>
             </dd>
     </dl>            
 
-            <input type="radio"/><label>Radio Button</label>
+            <input type="radio" data-dojo-type="dijit/form/RadioButton" name="cuenta"  value="coffee"/> <label>Radio Button</label>
             <br />
-            <input type="checkbox"/><label>Checkbox</label>
+            <input class="check" data-dojo-type="dijit/form/CheckBox" value="#" /><label>Checkbox</label>
             <div class="codeHtml">
                 <pre class="brush: js;">
-                    <input type="radio"/><label>Radio Button</label>
-                    <br />
-                    <input type="checkbox"/><label>Checkbox</label>
+<!-- <input type="radio" data-dojo-type="dijit/form/RadioButton" name="cuenta"  value="#"/> <label>Radio Button</label>
+<br />
+<input class="check" data-dojo-type="dijit/form/CheckBox" value="#" /><label>Checkbox</label> -->
                 </pre>
             </div>  
 
@@ -269,28 +284,56 @@ estilos visuales más complejos.</p>
 
         <section id="dropdown">
             <h3>Dropdown</h3>
-            <div class="selectBox ">
-    <div class="box">LOREMP IPSUM DOLOR SIT</div>
-    <select onchange="this.parentNode.getElementsByTagName('div')[0].innerHTML = this.options[this.selectedIndex].text">
-        <option>Lorem Ipsum Dolor sit</option>
-        <option>Lorem Ipsum Dolor sit</option>
-        <option>Lorem Ipsum Dolor sit</option>
-        <option>Lorem Ipsum Dolor sit</option>
-    </select>
-</div>
+            <select class="prefijo_cel" width="50%" name="select1" data-dojo-type="dijit/form/Select">
+                 <option value="05">1.000</option>
+                    <option value="06">2.000</option>
+                    <option value="07">3.500</option>
+                    <option value="08">5.000</option>
+                    <option value="09">10.000</option>
+            </select>
 <div class="codeHtml">
     <pre class="brush: js;">
-        <div class="selectBox">
-            <div class="box">LOREMP IPSUM DOLOR SIT</div>
-                <select onchange="this.parentNode.getElementsByTagName('div')[0].innerHTML = this.options[this.selectedIndex].text">
-                    <option>Lorem Ipsum Dolor sit</option>
-                    <option>Lorem Ipsum Dolor sit</option>
-                    <option>Lorem Ipsum Dolor sit</option>
-                    <option>Lorem Ipsum Dolor sit</option>
-                </select>
-        </div>
+<!--    <select class="prefijo_cel" width="50%" name="select1" data-dojo-type="dijit/form/Select">
+            <option value="05">1.000</option>
+            <option value="06">2.000</option>
+            <option value="07">3.500</option>
+            <option value="08">5.000</option>
+            <option value="09">10.000</option>
+        </select> 
+-->
     </pre>
-</div>               
+</div>
+
+
+<!-- <div id="horizontalSlider"
+    style="width:100%;"
+    name="horizontalSlider"
+    data-dojo-type="dijit/form/HorizontalSlider"
+    data-dojo-props="value:6,
+    minimum: -10,
+    maximum:10,
+    discreteValues:11,
+    intermediateChanges:true,
+    showButtons:false">
+    <ol data-dojo-type="dijit/form/HorizontalRuleLabels" container="topDecoration"
+        style="height:1.5em;font-size:75%;color:gray;">
+        <li> </li>
+        <li>20%</li>
+        <li>40%</li>
+        <li>60%</li>
+        <li>80%</li>
+        <li> </li>
+    </ol>
+    <div data-dojo-type="dijit/form/HorizontalRule" container="bottomDecoration"
+        count=11 style="height:5px;"></div>
+    <ol data-dojo-type="dijit/form/HorizontalRuleLabels" container="bottomDecoration"
+        style="height:1em;font-size:75%;color:gray;">
+        <li>0%</li>
+        <li>50%</li>
+        <li>100%</li>
+    </ol>
+</div>
+ -->               
 
         </section>
 
@@ -770,7 +813,7 @@ estilos visuales más complejos.</p>
         </tr>
     </thead>
     <tr class="opcion-tabla">
-        <td><input type="radio" name="cuenta"/></td>
+        <td><input type="radio" data-dojo-type="dijit/form/RadioButton" name="cuenta"  value="#"/></td>
         <td>
             <b class="labelTable">Fecha</b><span>21/10/2014</span>
         </td>
@@ -788,7 +831,7 @@ estilos visuales más complejos.</p>
         </td>
     </tr>
     <tr class="opcion-tabla">
-        <td><input type="radio" name="cuenta"/></td>
+        <td><input type="radio" data-dojo-type="dijit/form/RadioButton" name="cuenta"  value="#"/></td>
         <td>
             <b class="labelTable">Fecha</b><span>21/10/2014</span>
         </td>
@@ -806,7 +849,7 @@ estilos visuales más complejos.</p>
         </td>
     </tr>
     <tr class="opcion-tabla">
-        <td><input type="radio" name="cuenta"/></td>
+        <td><input type="radio" data-dojo-type="dijit/form/RadioButton" name="cuenta"  value="#"/></td>
         <td>
             <b class="labelTable">Fecha</b><span>21/10/2014</span>
         </td>
@@ -824,7 +867,7 @@ estilos visuales más complejos.</p>
         </td>
     </tr>
     <tr class="opcion-tabla">
-        <td><input type="radio" name="cuenta"/></td>
+        <td><input type="radio" data-dojo-type="dijit/form/RadioButton" name="cuenta"  value="#"/></td>
         <td>
             <b class="labelTable">Fecha</b><span>21/10/2014</span>
         </td>
@@ -842,7 +885,7 @@ estilos visuales más complejos.</p>
         </td>
     </tr>
     <tr class="opcion-tabla">
-        <td><input type="radio" name="cuenta"/></td>
+        <td><input type="radio" data-dojo-type="dijit/form/RadioButton" name="cuenta"  value="#"/></td>
         <td>
             <b class="labelTable">Fecha</b><span>21/10/2014</span>
         </td>
@@ -888,7 +931,7 @@ estilos visuales más complejos.</p>
                 </tr>
             </thead>
             <tr class="opcion-tabla">
-                <td><input type="radio" name="cuenta"/></td>
+                <td><!-- <input type="radio" data-dojo-type="dijit/form/RadioButton" name="cuenta"  value="#"/> --></td>
                 <td>
                     <b class="labelTable">Fecha</b><span>21/10/2014</span>
                 </td>
@@ -906,7 +949,7 @@ estilos visuales más complejos.</p>
                 </td>
             </tr>
             <tr class="opcion-tabla">
-                <td><input type="radio" name="cuenta"/></td>
+                <td><!-- <input type="radio" data-dojo-type="dijit/form/RadioButton" name="cuenta"  value="#"/> --></td>
                 <td>
                     <b class="labelTable">Fecha</b><span>21/10/2014</span>
                 </td>
@@ -924,7 +967,7 @@ estilos visuales más complejos.</p>
                 </td>
             </tr>
             <tr class="opcion-tabla">
-                <td><input type="radio" name="cuenta"/></td>
+                <td><!-- <input type="radio" data-dojo-type="dijit/form/RadioButton" name="cuenta"  value="#"/> --></td>
                 <td>
                     <b class="labelTable">Fecha</b><span>21/10/2014</span>
                 </td>
@@ -942,7 +985,7 @@ estilos visuales más complejos.</p>
                 </td>
             </tr>
             <tr class="opcion-tabla">
-                <td><input type="radio" name="cuenta"/></td>
+                <td><!-- <input type="radio" data-dojo-type="dijit/form/RadioButton" name="cuenta"  value="#"/> --></td>
                 <td>
                     <b class="labelTable">Fecha</b><span>21/10/2014</span>
                 </td>
@@ -960,7 +1003,7 @@ estilos visuales más complejos.</p>
                 </td>
             </tr>
             <tr class="opcion-tabla">
-                <td><input type="radio" name="cuenta"/></td>
+                <td><!-- <input type="radio" data-dojo-type="dijit/form/RadioButton" name="cuenta"  value="#"/> --></td>
                 <td>
                     <b class="labelTable">Fecha</b><span>21/10/2014</span>
                 </td>
@@ -1022,7 +1065,7 @@ estilos visuales más complejos.</p>
         </tr>
     </thead>
     <tr class="opcion-tabla">
-        <td><input type="checkbox" name="cuenta"/></td>
+        <td><input class="check" data-dojo-type="dijit/form/CheckBox" value="#" /></td>
         <td>
             <b class="labelTable">Fecha</b><span>21/10/2014</span>
         </td>
@@ -1040,7 +1083,7 @@ estilos visuales más complejos.</p>
         </td>
     </tr>
     <tr class="opcion-tabla">
-        <td><input type="checkbox" name="cuenta"/></td>
+        <td><input class="check" data-dojo-type="dijit/form/CheckBox" value="#" /></td>
         <td>
             <b class="labelTable">Fecha</b><span>21/10/2014</span>
         </td>
@@ -1058,7 +1101,7 @@ estilos visuales más complejos.</p>
         </td>
     </tr>
     <tr class="opcion-tabla">
-        <td><input type="checkbox" name="cuenta"/></td>
+        <td><input class="check" data-dojo-type="dijit/form/CheckBox" value="#" /></td>
         <td>
             <b class="labelTable">Fecha</b><span>21/10/2014</span>
         </td>
@@ -1076,7 +1119,7 @@ estilos visuales más complejos.</p>
         </td>
     </tr>
     <tr class="opcion-tabla">
-        <td><input type="checkbox" name="cuenta"/></td>
+        <td><input class="check" data-dojo-type="dijit/form/CheckBox" value="#" /></td>
         <td>
             <b class="labelTable">Fecha</b><span>21/10/2014</span>
         </td>
@@ -1094,7 +1137,7 @@ estilos visuales más complejos.</p>
         </td>
     </tr>
     <tr class="opcion-tabla">
-        <td><input type="checkbox" name="cuenta"/></td>
+        <td><input class="check" data-dojo-type="dijit/form/CheckBox" value="#" /></td>
         <td>
             <b class="labelTable">Fecha</b><span>21/10/2014</span>
         </td>
@@ -1139,7 +1182,7 @@ estilos visuales más complejos.</p>
                 </tr>
             </thead>
             <tr class="opcion-tabla">
-                <td><input type="checkbox" name="cuenta"/></td>
+                <td><!-- <input class="check" data-dojo-type="dijit/form/CheckBox" value="#" /> --></td>
                 <td>
                     <b class="labelTable">Fecha</b><span>21/10/2014</span>
                 </td>
@@ -1157,7 +1200,7 @@ estilos visuales más complejos.</p>
                 </td>
             </tr>
             <tr class="opcion-tabla">
-                <td><input type="checkbox" name="cuenta"/></td>
+                <td><!-- <input class="check" data-dojo-type="dijit/form/CheckBox" value="#" /> --></td>
                 <td>
                     <b class="labelTable">Fecha</b><span>21/10/2014</span>
                 </td>
@@ -1175,7 +1218,7 @@ estilos visuales más complejos.</p>
                 </td>
             </tr>
             <tr class="opcion-tabla">
-                <td><input type="checkbox" name="cuenta"/></td>
+                <td><!-- <input class="check" data-dojo-type="dijit/form/CheckBox" value="#" /> --></td>
                 <td>
                     <b class="labelTable">Fecha</b><span>21/10/2014</span>
                 </td>
@@ -1193,7 +1236,7 @@ estilos visuales más complejos.</p>
                 </td>
             </tr>
             <tr class="opcion-tabla">
-                <td><input type="checkbox" name="cuenta"/></td>
+                <td><!-- <input class="check" data-dojo-type="dijit/form/CheckBox" value="#" /> --></td>
                 <td>
                     <b class="labelTable">Fecha</b><span>21/10/2014</span>
                 </td>
@@ -1211,7 +1254,7 @@ estilos visuales más complejos.</p>
                 </td>
             </tr>
             <tr class="opcion-tabla">
-                <td><input type="checkbox" name="cuenta"/></td>
+                <td><!-- <input class="check" data-dojo-type="dijit/form/CheckBox" value="#" /> --></td>
                 <td>
                     <b class="labelTable">Fecha</b><span>21/10/2014</span>
                 </td>
@@ -1555,7 +1598,354 @@ estilos visuales más complejos.</p>
                 </div> 
                 </pre>
             </div>  
- 
+            
+            <h3>Detalle de Registro</h3>
+            <dl>
+    <dt>1. Atributos:</dt>
+        <dd>
+        Se trata del componente tabla más común de la plataforma. Se compone  de filas de datos organizadas en columnas y cabeceras de columnas que presentan el criterio de agrupación. 
+        </dd>
+        <dt>2. Usabilidad:</dt>
+            <dd>
+            Las tabla sde datos deben tener presente un contexto preciso de aparición pudiendo ser acompañada de un título de sección o tabla de presentación. destacada la cabecera
+            </dd>
+        <dt>3. Reglas y restricciones:</dt>  
+            <dd>
+                Se debe usar cada vexz que se necesiten presentar gran cantidad de datos provenientes de los servicios.
+                - El máximo de registros en una vista o  filas posible (antes de la paginación) son 12 filas.
+                - Las columnas visibles son hasta 8 en vista escritorio antes que los demás datos se escondan en un popover.
+
+            </dd>  
+</dl>
+        <h4>Vista Mobile</h4>
+        <p>En la vista mobile se produce un cambio de patrón de diseño  en donde cada una de las  filas de datos van acompañadas de  la cabecera. 
+            <br />La cantidad de registros posibles en esta vista son 3 (antes de la paginación)</p>
+<table class="table table-responsive table-hover table-striped">
+    <thead>
+        <tr>
+            <th>
+                Fecha
+            </th>
+            <th>
+                Cargos($)
+            </th>
+            <th>
+                Abonos($)
+            </th>
+            <th>
+                Descripción
+            </th>
+            <th>
+                Detalle
+            </th>
+        </tr>
+    </thead>
+    <tr>
+        <td>
+            <b class="labelTable">Fecha</b>21/10/2014
+        </td>
+        <td>
+            <b class="labelTable">Cargos($)</b>
+        </td>
+        <td>
+            <b class="labelTable">Abonos($) </b>1.440.000
+        </td>
+        <td>
+            <b class="labelTable">Descripción </b>Traspaso Internet Cta Cte
+        </td>
+        <td>
+            <b class="labelTable">Saldo Diario </b>
+                <div data-dojo-type="dijit/form/DropDownButton">
+                    <span>Register</span>
+                        <div data-dojo-type="dijit/TooltipDialog">
+                          <table class="table">
+                            <thead>
+                                <tr>
+                                    <th colspan="2">
+                                        Lorem Ipsum Dolor sit
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td>
+                                    Loremp Ipsum
+                                </td>
+                                <td>
+                                    Loremp Ipsum
+                                </td>
+                            </tr>
+                             <tr>
+                                <td>
+                                    Loremp Ipsum
+                                </td>
+                                <td>
+                                    Loremp Ipsum
+                                </td>
+                            </tr>
+                             <tr>
+                                <td>
+                                    Loremp Ipsum
+                                </td>
+                                <td>
+                                    Loremp Ipsum
+                                </td>
+                            </tr>
+                          </table>
+                        </div>
+                </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b class="labelTable">Fecha</b>21/10/2014
+        </td>
+        <td>
+            <b class="labelTable">Cargos($)</b>100.000
+        </td>
+        <td>
+            <b class="labelTable">Abonos($) </b>
+        </td>
+        <td>
+            <b class="labelTable">Descripción </b>Traspaso Internet Cta Cte
+        </td>
+        <td>
+            <b class="labelTable">Saldo Diario </b>1.340.000
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b class="labelTable">Fecha</b>21/10/2014
+        </td>
+        <td>
+            <b class="labelTable">Cargos($)</b>100.000
+        </td>
+        <td>
+            <b class="labelTable">Abonos($) </b>
+        </td>
+        <td>
+            <b class="labelTable">Descripción </b>Traspaso Internet Cta Cte
+        </td>
+        <td>
+            <b class="labelTable">Saldo Diario </b>1.240.000
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b class="labelTable">Fecha</b>21/10/2014
+        </td>
+        <td>
+            <b class="labelTable">Cargos($)</b>100.000
+        </td>
+        <td>
+            <b class="labelTable">Abonos($)</b>
+        </td>
+        <td>
+            <b class="labelTable">Descripción </b>Traspaso Internet Cta Cte
+        </td>
+        <td>
+            <b class="labelTable">Saldo Diario </b>1.140.000
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b class="labelTable">Fecha</b>21/10/2014
+        </td>
+        <td>
+            <b class="labelTable">Cargos($)</b>100.000
+        </td>
+        <td>
+            <b class="labelTable">Abonos($) </b>
+        </td>
+        <td>
+            <b class="labelTable">Descripción </b>Traspaso Internet Cta Cte
+        </td>
+        <td>
+            <b class="labelTable">Saldo Diario </b>1.140.000
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b class="labelTable">Fecha</b>21/10/2014
+        </td>
+        <td>
+            <b class="labelTable">Cargos($)</b>100.000
+        </td>
+        <td>
+            <b class="labelTable">Abonos($)</b>
+        </td>
+        <td>
+            <b class="labelTable">Descripción</b>Traspaso Internet Cta Cte
+        </td>
+        <td>
+            <b class="labelTable">Saldo Diario</b>1.140.000
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b class="labelTable">Fecha</b>21/10/2014
+        </td>
+        <td>
+            <b class="labelTable">Cargos($)</b>100.000
+        </td>
+        <td>
+            <b class="labelTable">Abonos($) </b>
+        </td>
+        <td>
+            <b class="labelTable">Descripción </b>Traspaso Internet Cta Cte
+        </td>
+        <td>
+            <b class="labelTable">Saldo Diario </b>1.140.000
+        </td>
+    </tr>
+</table>
+
+<div class="codeHtml">
+    <pre class="brush :js;">
+        <table class="table table-responsive table-hover table-striped">
+            <thead>
+                <tr>
+                    <th>
+                        Fecha
+                    </th>
+                    <th>
+                        Cargos($)
+                    </th>
+                    <th>
+                        Abonos($)
+                    </th>
+                    <th>
+                        Descripción
+                    </th>
+                    <th>
+                        Saldo Diario
+                    </th>
+                </tr>
+            </thead>
+            <tr>
+                <td>
+                    <b class="labelTable">Fecha</b>21/10/2014
+                </td>
+                <td>
+                    <b class="labelTable">Cargos($)</b>
+                </td>
+                <td>
+                    <b class="labelTable">Abonos($) </b>1.440.000
+                </td>
+                <td>
+                    <b class="labelTable">Descripción </b>Traspaso Internet Cta Cte
+                </td>
+                <td>
+                    <b class="labelTable">Saldo Diario </b>1.440.000
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b class="labelTable">Fecha</b>21/10/2014
+                </td>
+                <td>
+                    <b class="labelTable">Cargos($)</b>100.000
+                </td>
+                <td>
+                    <b class="labelTable">Abonos($) </b>
+                </td>
+                <td>
+                    <b class="labelTable">Descripción </b>Traspaso Internet Cta Cte
+                </td>
+                <td>
+                    <b class="labelTable">Saldo Diario </b>1.340.000
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b class="labelTable">Fecha</b>21/10/2014
+                </td>
+                <td>
+                    <b class="labelTable">Cargos($)</b>100.000
+                </td>
+                <td>
+                    <b class="labelTable">Abonos($) </b>
+                </td>
+                <td>
+                    <b class="labelTable">Descripción </b>Traspaso Internet Cta Cte
+                </td>
+                <td>
+                    <b class="labelTable">Saldo Diario </b>1.240.000
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b class="labelTable">Fecha</b>21/10/2014
+                </td>
+                <td>
+                    <b class="labelTable">Cargos($)</b>100.000
+                </td>
+                <td>
+                    <b class="labelTable">Abonos($)</b>
+                </td>
+                <td>
+                    <b class="labelTable">Descripción </b>Traspaso Internet Cta Cte
+                </td>
+                <td>
+                    <b class="labelTable">Saldo Diario </b>1.140.000
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b class="labelTable">Fecha</b>21/10/2014
+                </td>
+                <td>
+                    <b class="labelTable">Cargos($)</b>100.000
+                </td>
+                <td>
+                    <b class="labelTable">Abonos($) </b>
+                </td>
+                <td>
+                    <b class="labelTable">Descripción </b>Traspaso Internet Cta Cte
+                </td>
+                <td>
+                    <b class="labelTable">Saldo Diario </b>1.140.000
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b class="labelTable">Fecha</b>21/10/2014
+                </td>
+                <td>
+                    <b class="labelTable">Cargos($)</b>100.000
+                </td>
+                <td>
+                    <b class="labelTable">Abonos($)</b>
+                </td>
+                <td>
+                    <b class="labelTable">Descripción</b>Traspaso Internet Cta Cte
+                </td>
+                <td>
+                    <b class="labelTable">Saldo Diario</b>1.140.000
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b class="labelTable">Fecha</b>21/10/2014
+                </td>
+                <td>
+                    <b class="labelTable">Cargos($)</b>100.000
+                </td>
+                <td>
+                    <b class="labelTable">Abonos($) </b>
+                </td>
+                <td>
+                    <b class="labelTable">Descripción </b>Traspaso Internet Cta Cte
+                </td>
+                <td>
+                    <b class="labelTable">Saldo Diario </b>1.140.000
+                </td>
+            </tr>
+        </table>
+    </pre>
+
+
+
+</div>  
 
         </section>
         <section id="paginador">

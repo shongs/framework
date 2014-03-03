@@ -1,0 +1,166 @@
+/*COLORES*/
+/*============== MIXING ==============*/
+/*============= Margenes ==================*/
+.margin-tb {
+  margin: 10px 0 !important;
+}
+.margen-left {
+  margin-left: 10px;
+}
+.margen-left2 {
+  margin-left: 20px;
+}
+.margen-right {
+  margin-right: 10px;
+}
+.margen-right2 {
+  margin-right: 20px;
+}
+/*============= PADDING ================*/
+.pad-all {
+  padding: 20px;
+}
+.pad-sides {
+  padding: 0 20px;
+}
+.pad-tb {
+  padding: 20px 0;
+}
+.pad-left {
+  padding: 0 0 0 20px;
+}
+/*Calendario Dojo*/
+.dijitMenu {
+  border-top: none;
+  border-bottom: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+.dijitDateTextBox {
+  border: 1px solid #CCCCCC;
+  width: 100%;
+}
+.dijitDateTextBox .dijitArrowButtonContainer {
+  background: url("../../img/calendar.png") no-repeat scroll center #dddddd;
+  height: 30px;
+  width: 30px;
+}
+.dijitArrowButtonContainer {
+  background: url("../../img/dropIcon.gif") no-repeat scroll center #dddddd;
+  width: 30px;
+  height: 30px;
+  border: none;
+}
+.dijitDateTextBox .dijitReset.dijitInputInner {
+  padding: 6px 10px !important;
+}
+.dijitDateTextBox .dijitPopup {
+  background: #fff;
+  border: 0 none;
+  margin: 0;
+  position: absolute;
+  width: 225px;
+  /*display: block !important;*/
+
+}
+.dijitCalendarContainer.dijitCalendar {
+  box-shadow: -1px 5px 11px -2px rgba(0, 0, 0, 0.3);
+  background: #fff;
+}
+.dijitCalendarContainer th,
+.dijitCalendarContainer td {
+  text-align: center;
+}
+.dijitCalendarContainer td {
+  border-bottom: 1px solid #DDDDDD;
+  padding: 2px 0;
+  text-align: center;
+}
+.dijitCalendarSelectedDate {
+  background: #662869;
+  padding: 3px;
+  color: #fff;
+}
+.dijitCalendarMonthContainer th {
+  border-bottom: 1px solid #CCCCCC;
+  padding: 4px !important;
+}
+.dijitDateTextBox .dijitButtonNode {
+  border: none;
+  background-image: #ddd;
+}
+.dijitReset.dijitCalendarDayLabelTemplate {
+  font-size: 11px;
+  font-weight: bold;
+  padding: 11px;
+}
+tfoot.dijitCalendarYearContainer td {
+  border: medium none;
+}
+/*Select numero celular dojo*/
+.cel_numb .numero {
+  width: 20%;
+  float: left;
+}
+.cel_numb .input-group {
+  float: right;
+  min-width: 0;
+  width: 73%;
+}
+.prefijo_cel .dijitSelectLabel {
+  padding: 7px !important;
+}
+.dijitMenuItemFocused,
+.dijitMenuItemHoverFocused,
+.dijitMenuItemSelected {
+  background: #ddd !important;
+  font-weight: normal !important;
+}
+.dijitSelect {
+  border: 1px solid #DDDDDD !important;
+}
+.dijitSelect .dijitButtonContents {
+  border: none;
+}
+.dijitReset.dijitMenuItemLabel {
+  padding: 5px 10px;
+}
+/*RadioButtonx*/
+.dijitRadio {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border: 1px solid #CCCCCC;
+  border-radius: 100%;
+  margin-right: 10px;
+  margin-top: -3px;
+}
+.dijitRadioChecked {
+  background: none repeat scroll 0 0 #662869;
+  border: 1px solid #CCC;
+  box-shadow: inset 0 0 0 3px #FFFFFF;
+}
+/*CHECKBOX*/
+.check {
+  width: 16px;
+  height: 16px;
+  color: transparent;
+  border: 1px solid #B7B7B7;
+  background: #D9DADB;
+  margin-right: 10px;
+}
+.dijitCheckBox {
+  border: 1px solid #B7B7B7;
+  background: #D9DADB;
+}
+.dijitCheckBoxHover {
+  background: #7F5B83;
+}
+.dijitCheckBoxChecked {
+  background: url(../../img/check.png) center;
+}
+/*Select*/
+.midSelect {
+  width: 190px !important;
+}
+.midSelect .dijitButtonContents {
+  padding: 0 10px;
+}
